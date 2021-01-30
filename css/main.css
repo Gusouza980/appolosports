@@ -1,0 +1,328 @@
+/* FONTES */
+
+@font-face {
+    font-family: 'Konnect';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Konnect Regular'), url('../fonts/KonnectRegular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Konnect Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Konnect Bold'), url('../fonts/KonnectBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SVN-Gilroy'), url('../fonts/SVNGilroy Light.woff') format('woff');
+}
+
+:root{
+    --primaria1: #FDD00C;
+    --primaria2: #FFC94B;
+}
+
+/* Botões */
+
+.btn-outline-primary{
+    color: var(--primaria2);
+    border-color: var(--primaria1);
+}
+
+.btn-outline-primary:hover{
+    background-color: var(--primaria1);
+    border-color: var(--primaria2);
+}
+
+.btn-primary{
+    color: black;
+    background-color: var(--primaria2);
+    border-color: var(--primaria2);
+}
+
+.btn-primary:hover{
+    color: black;
+    background-color: var(--primaria2);
+    border-color: var(--primaria2);
+}
+
+.btn-primary:active{
+    color: black;
+    background-color: var(--primaria2);
+    border-color: var(--primaria2);
+}
+
+.btn-primary:focus{
+    color: black;
+    background-color: var(--primaria2);
+    border-color: var(--primaria2);
+    box-shadow: 0 0 0;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle{
+    color: black;
+    background-color: var(--primaria2);
+    border-color: var(--primaria2);
+    box-shadow: 0 0 0;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus{
+    color: black;
+    background-color: var(--primaria2);
+    border-color: var(--primaria2);
+    box-shadow: 0 0 0;
+}
+
+/* Fundos */
+
+.bg-branco{
+    background-color: white;
+}
+
+/* Classes úteis */
+
+
+.overlay-black{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/* Navbar */
+.nav-link{
+    color: inherit;
+}
+
+.nav-item > .nav-link{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 135%;
+
+    /* or 16px */
+    letter-spacing: 0.12em;
+    text-transform: capitalize;
+    color:white;
+}
+
+.nav-item.active{
+    color: var(--primaria1);
+    border-bottom: 1px solid var(--primaria1);
+}
+
+.nav-item.active > .nav-link{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 135%;
+
+    /* or 16px */
+    letter-spacing: 0.12em;
+    text-transform: capitalize;
+    color: var(--primaria1);
+}
+
+.nav-botao > .botao-mensagem{
+    width: 234.23px;
+    height: 56px;
+}
+
+/* Header */
+
+#container-header{
+    background-image: url('../img/fundo-header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titulo-header-row{
+    min-height: 200px;
+}
+
+.titulo-header > h2{
+    font-family: 'Konnect Bold';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 53.6833px;
+    line-height: 109%;
+
+    /* identical to box height, or 59px */
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+
+.titulo-header > span{
+    font-family: 'Konnect';
+    font-size: 18px;
+    line-height: 135%;
+
+    /* or 24px */
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+
+.texto-vertical-header-right{
+    position: absolute;
+    right: 0px;
+    top: 200px;
+    color: white;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    height: 200px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 135%;
+
+    /* or 16px */
+    letter-spacing: 0.12em;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+
+/* Contato 1 */
+
+#contato1{
+    background-color: transparent;
+    margin-top: -5rem;
+    position: relative;
+    z-index: 99999;
+}
+
+#titulo-contato1{
+    font-family: 'Konnect Bold';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20.8082px;
+    line-height: 109%;
+
+    /* identical to box height, or 23px */
+
+    color: #FFFFFF;
+}
+
+#form-contato1 > .form-group > label{
+    font-family: 'Konnect';
+    font-size: 13px;
+    line-height: 135%;
+
+    /* identical to box height, or 18px */
+    text-transform: capitalize;
+
+    color: #000000;
+}
+
+#form-contato1 > .form-group > input{
+    background: #EEEEEE;
+    height: 51.23px;
+}
+
+#form-contato1 > .form-group > button{
+    font-family: 'Konnect';
+    font-size: 14px;
+    line-height: 135%;
+
+    /* identical to box height, or 19px */
+    text-transform: capitalize;
+
+    color: #000000;
+    width: 149.35px;
+    height: 51.23px;
+}
+
+/* Vem Treinar */
+
+#vem-treinar{
+    background: rgba(243, 243, 243, 0.9);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -6rem;
+}
+
+.titulo-vem-treinar{
+    margin-top: 3rem;
+}
+
+.titulo-vem-treinar > h2{
+    font-family: 'Konnect Bold';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 93.5%;
+
+    /* or 39px */
+    text-transform: capitalize;
+
+    color: #000000;
+}
+
+.titulo-vem-treinar > span{
+    font-family: 'SVN-Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 17px;
+
+    color: #7C7C7C;
+}
+
+.div-card-treino > .card > img{
+    width: 123px; 
+    height: 124px;
+}
+
+.div-card-treino > .card > .card-body > h5{
+    font-family: 'Konnect Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 29.5625px;
+    line-height: 34px;
+
+    /* or 114% */
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #000000;
+}
+
+.div-card-treino > .card > .card-body > p{
+    font-family: 'SVN-Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+
+    color: #7C7C7C;
+}
+
+.div-card-treino > .card > a{
+    font-family: 'SVN-Gilroy';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 19px;
+
+    /* identical to box height */
+
+    color: #000000;
+}
