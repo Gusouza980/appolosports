@@ -21,75 +21,109 @@
     src: local('SVN-Gilroy'), url('../fonts/SVNGilroy Light.woff') format('woff');
 }
 
-:root{
+@font-face {
+    font-family: 'Bebas';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bebas'), url('../fonts/Bebas.ttf') format('otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root {
     --primaria1: #FDD00C;
     --primaria2: #FFC94B;
+    --fundo1: #F3F3F3;
+    --fundo-footer: #27272D;
 }
+
 
 /* Botões */
 
-.btn-outline-primary{
+.btn-outline-primary {
     color: var(--primaria2);
     border-color: var(--primaria1);
 }
 
-.btn-outline-primary:hover{
+.btn-outline-primary:hover {
     background-color: var(--primaria1);
     border-color: var(--primaria2);
 }
 
-.btn-primary{
+.btn-primary {
     color: black;
     background-color: var(--primaria2);
     border-color: var(--primaria2);
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     color: black;
     background-color: var(--primaria2);
     border-color: var(--primaria2);
 }
 
-.btn-primary:active{
+.btn-primary:active {
     color: black;
     background-color: var(--primaria2);
     border-color: var(--primaria2);
 }
 
-.btn-primary:focus{
+.btn-primary:focus {
     color: black;
     background-color: var(--primaria2);
     border-color: var(--primaria2);
     box-shadow: 0 0 0;
 }
 
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle{
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
     color: black;
     background-color: var(--primaria2);
     border-color: var(--primaria2);
     box-shadow: 0 0 0;
 }
 
-.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus{
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
     color: black;
     background-color: var(--primaria2);
     border-color: var(--primaria2);
     box-shadow: 0 0 0;
 }
+
+.btn-black {
+    width: 201.06px;
+    height: 51.23px;
+    left: 446.74px;
+    top: 3047.25px;
+    background: #000000;
+    font-family: 'Konnect Regular';
+    font-size: 14px;
+    line-height: 135%;
+    /* identical to box height, or 19px */
+    text-transform: capitalize;
+    color: #FDD00C;
+}
+
 
 /* Fundos */
 
-.bg-branco{
+.bg-branco {
     background-color: white;
 }
 
+.bg-primaria {
+    background-color: var(--primaria1);
+}
+
+
 /* Classes úteis */
 
-
-.overlay-black{
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.5);
+.overlay-black {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .row-eq-height {
@@ -99,84 +133,83 @@
     display: flex;
 }
 
+.px-6 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+
 /* Navbar */
-.nav-link{
+
+.nav-link {
     color: inherit;
 }
 
-.nav-item > .nav-link{
+.nav-item>.nav-link {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 135%;
-
     /* or 16px */
     letter-spacing: 0.12em;
     text-transform: capitalize;
-    color:white;
+    color: white;
 }
 
-.nav-item.active{
+.nav-item.active {
     color: var(--primaria1);
     border-bottom: 1px solid var(--primaria1);
 }
 
-.nav-item.active > .nav-link{
+.nav-item.active>.nav-link {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 135%;
-
     /* or 16px */
     letter-spacing: 0.12em;
     text-transform: capitalize;
     color: var(--primaria1);
 }
 
-.nav-botao > .botao-mensagem{
+.nav-botao>.botao-mensagem {
     width: 234.23px;
     height: 56px;
 }
 
+
 /* Header */
 
-#container-header{
+#container-header {
     background-image: url('../img/fundo-header.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
-.titulo-header-row{
-    min-height: 200px;
-}
-
-.titulo-header > h2{
+.titulo-header>h2 {
     font-family: 'Konnect Bold';
     font-style: normal;
     font-weight: 900;
     font-size: 53.6833px;
     line-height: 109%;
-
     /* identical to box height, or 59px */
     text-transform: capitalize;
-
     color: #FFFFFF;
 }
 
-.titulo-header > span{
+.titulo-header>span {
     font-family: 'Konnect';
     font-size: 18px;
     line-height: 135%;
-
     /* or 24px */
     text-transform: capitalize;
-
     color: #FFFFFF;
 }
 
-.texto-vertical-header-right{
+.texto-vertical-header-right {
     position: absolute;
     right: 0px;
     top: 200px;
@@ -184,145 +217,457 @@
     writing-mode: vertical-rl;
     text-orientation: mixed;
     height: 200px;
-
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 135%;
-
     /* or 16px */
     letter-spacing: 0.12em;
     text-transform: capitalize;
-
     color: #FFFFFF;
 }
 
+
 /* Contato 1 */
 
-#contato1{
+#contato1 {
     background-color: transparent;
     margin-top: -5rem;
     position: relative;
     z-index: 99999;
 }
 
-#titulo-contato1{
+#contato1-caixa {
+    box-shadow: -1px 7px 15px rgba(0, 0, 0, 0.15);
+}
+
+#titulo-contato1 {
     font-family: 'Konnect Bold';
     font-style: normal;
     font-weight: 900;
     font-size: 20.8082px;
     line-height: 109%;
-
     /* identical to box height, or 23px */
-
     color: #FFFFFF;
 }
 
-#form-contato1 > .form-group > label{
+#form-contato1>.form-group>label {
     font-family: 'Konnect';
     font-size: 13px;
     line-height: 135%;
-
     /* identical to box height, or 18px */
     text-transform: capitalize;
-
     color: #000000;
 }
 
-#form-contato1 > .form-group > input{
+#form-contato1>.form-group>input {
     background: #EEEEEE;
     height: 51.23px;
 }
 
-#form-contato1 > .form-group > button{
+#form-contato1>.form-group>button {
     font-family: 'Konnect';
     font-size: 14px;
     line-height: 135%;
-
     /* identical to box height, or 19px */
     text-transform: capitalize;
-
     color: #000000;
     width: 149.35px;
     height: 51.23px;
 }
 
+
 /* Vem Treinar */
 
-#vem-treinar{
-    background: rgba(243, 243, 243, 0.9);
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+#vem-treinar {
+    background: var(--fundo1);
+    /* width: 80%; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
     margin-top: -6rem;
 }
 
-.titulo-vem-treinar{
+.titulo-vem-treinar {
     margin-top: 3rem;
 }
 
-.titulo-vem-treinar > h2{
+.titulo-vem-treinar>h2 {
     font-family: 'Konnect Bold';
     font-style: normal;
     font-weight: 900;
     font-size: 42px;
     line-height: 93.5%;
-
     /* or 39px */
     text-transform: capitalize;
-
     color: #000000;
 }
 
-.titulo-vem-treinar > span{
+.titulo-vem-treinar>span {
     font-family: 'SVN-Gilroy';
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 17px;
-
     color: #7C7C7C;
 }
 
-.div-card-treino > .card > img{
-    width: 123px; 
+.div-card-treino>.card>img {
+    width: 123px;
     height: 124px;
 }
 
-.div-card-treino > .card > .card-body > h5{
+.div-card-treino>.card>.card-body>h5 {
     font-family: 'Konnect Bold';
     font-style: normal;
     font-weight: bold;
     font-size: 29.5625px;
     line-height: 34px;
-
     /* or 114% */
     text-align: center;
     text-transform: capitalize;
-
     color: #000000;
 }
 
-.div-card-treino > .card > .card-body > p{
+.div-card-treino>.card>.card-body>p {
     font-family: 'SVN-Gilroy';
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 17px;
     text-align: center;
-
     color: #7C7C7C;
 }
 
-.div-card-treino > .card > a{
+.div-card-treino>.card>a {
     font-family: 'SVN-Gilroy';
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 19px;
-
     /* identical to box height */
-
     color: #000000;
+}
+
+.div-card-treino>.card {
+    box-shadow: 3px 4px 16px -3px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Conheça */
+
+#conheca {
+    background-color: white;
+    box-shadow: 3px 4px 16px -3px rgba(0, 0, 0, 0.25);
+}
+
+.texto-conheca>h2 {
+    font-family: 'Konnect Bold';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 135%;
+    /* identical to box height, or 57px */
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.texto-conheca>p {
+    font-family: 'Konnect';
+    font-size: 18px;
+    line-height: 135%;
+    /* or 24px */
+    text-transform: capitalize;
+    color: #000000;
+}
+
+
+/* Preco */
+
+.texto-preco>h2 {
+    font-family: 'Konnect Bold';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 97.5%;
+    /* or 41px */
+    text-transform: capitalize;
+}
+
+.texto-preco>p {
+    font-family: 'Konnect';
+    font-size: 18px;
+    line-height: 135%;
+    /* or 24px */
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.texto-preco>span {
+    font-family: 'Konnect';
+    font-weight: bold;
+    color: white;
+    font-style: normal;
+    /* font-weight: normal; */
+    /* font-size: 197.928px; */
+    /* line-height: 262px; */
+    letter-spacing: -0.055em;
+    text-transform: capitalize;
+}
+
+
+/* Contato 2 */
+
+#contato2 {
+    background: var(--fundo1);
+}
+
+.card-contato {
+    box-shadow: -1px 7px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-contato>h2 {
+    font-family: 'Konnect Bold';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24.6008px;
+    line-height: 135%;
+    /* or 33px */
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.card-contato>form>.form-group>label {
+    font-family: 'Konnect';
+    font-size: 13px;
+    line-height: 135%;
+    /* identical to box height, or 18px */
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.card-contato>form>.form-group>input {
+    height: 52.69px;
+    background: #EEEEEE;
+}
+
+.card-contato>form>.form-group>button {
+    font-family: 'Konnect Bold';
+    font-size: 14px;
+    line-height: 135%;
+    /* identical to box height, or 19px */
+    text-transform: capitalize;
+    color: #000000;
+    width: 197.84px;
+    height: 51.23px;
+}
+
+
+/* Programas */
+
+#programas {
+    background: var(--primaria1);
+}
+
+.imagem-programa>img {
+    box-shadow: -1px 7px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Video */
+
+.texto-video>h2 {
+    font-family: 'Konnect Bold';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 93.5%;
+    /* or 39px */
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.video-preview {
+    width: 100%;
+    max-width: 800px;
+}
+
+
+/* Depoimentos */
+
+#depoimentos {
+    background: var(--fundo1);
+}
+
+.titulo-depoimento>span {
+    font-family: 'SVN-Gilroy';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 17px;
+    color: #7C7C7C;
+}
+
+.titulo-depoimento>h4 {
+    font-family: 'SVN-Gilroy';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 17px;
+    /* identical to box height */
+    color: var(--primaria2);
+}
+
+.card-depoimento {
+    background: white;
+}
+
+.texto-card-depoimento>h4 {
+    font-family: 'Konnect Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 34px;
+    /* identical to box height, or 187% */
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.texto-card-depoimento>h5 {
+    font-family: 'SVN-Gilroy';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 14px;
+    /* identical to box height */
+    color: var(--primaria1);
+}
+
+.texto-card-depoimento>span {
+    font-family: 'SVN-Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 135%;
+    /* or 19px */
+    letter-spacing: 1px;
+    color: #7C7C7C;
+}
+
+
+/* Covid */
+
+.texto-covid>h2 {
+    font-family: 'Konnect Bold';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 93.5%;
+    /* or 39px */
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.texto-covid>span {
+    font-family: 'SVN-Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 135%;
+    /* or 22px */
+    text-align: center;
+    color: #7C7C7C;
+}
+
+.titulo-card-covid {
+    font-family: 'Konnect Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 16px;
+    /* identical to box height, or 187% */
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.texto-card-covid {
+    font-family: 'SVN-Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 135%;
+    /* or 22px */
+    text-align: center;
+    color: #7C7C7C;
+}
+
+
+/* Footer */
+
+#footer {
+    background: var(--fundo-footer);
+}
+
+.footer-logo-texto {
+    font-family: 'Konnect Regular';
+    font-size: 14px;
+    line-height: 135%;
+    /* or 19px */
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.footer-links-titulo {
+    font-family: 'Konnect Bold';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24.6253px;
+    line-height: 135%;
+    /* identical to box height, or 33px */
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.footer-links-texto {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 135%;
+    /* or 19px */
+    letter-spacing: 0.12em;
+    text-transform: capitalize;
+    color: #FFC94B;
+}
+
+.footer-lista-contato>span {
+    font-family: 'Konnect Regular';
+    font-size: 14px;
+    line-height: 135%;
+    /* or 19px */
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.footer-lista-contato>.icone-contato {
+    color: var(--primaria2)
+}
+
+.copyright {
+    font-family: 'Konnect Regular';
+    font-size: 14px;
+    line-height: 135%;
+    /* or 19px */
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.copyright2 {
+    font-family: 'Konnect Regular';
+    font-size: 14px;
+    line-height: 135%;
+    /* or 19px */
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
 }
