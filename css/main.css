@@ -106,6 +106,19 @@
     color: #FDD00C;
 }
 
+.btn-green{
+    background: #0AA940;
+    border-radius: 6px;
+    font-family: 'Konnect Regular';
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
 
 /* Fundos */
 
@@ -113,12 +126,20 @@
     background-color: white;
 }
 
+.bg-preto{
+    background-color: #27272D;;
+}
+
 .bg-primaria {
     background-color: var(--primaria1);
 }
 
+.bg-primaria2 {
+    background-color: var(--primaria2);
+}
+
 .bg-secundaria {
-    background: #F3F3F3;
+    background-color: #F3F3F3;
 }
 
 
@@ -140,6 +161,10 @@
 .px-6 {
     padding-left: 5rem;
     padding-right: 5rem;
+}
+
+.border-radius10{
+    border-radius: 10px;;
 }
 
 
@@ -239,7 +264,7 @@
 .texto-vertical-header-left {
     position: absolute;
     left: 0px;
-    top: 200px;
+    top: 10rem;
     color: white;
     writing-mode: vertical-rl;
     text-orientation: mixed;
@@ -721,5 +746,73 @@
     line-height: 135%;
     /* or 22px */
     letter-spacing: 1px;
+    color: #7C7C7C;
+}
+
+
+/* PÁGINA DE CONTATO */
+
+
+.titulo-contato{
+    font-family: 'Konnect Bold';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20.8082px;
+    line-height: 109%;
+
+    /* or 23px */
+
+    color: #7C7C7C;
+}
+
+.botao-contato{
+    width: 149.35px;
+    height: 51.23px;
+}
+
+/* PÁGINA ESPECIALISTA */
+
+.contato-especialista > h4{
+    font-family: 'Konnect Regular';
+    font-size: 24px;
+    line-height: 37px;
+
+    /* identical to box height, or 154% */
+
+    /* brand-green */
+    color: var(--primaria2);
+}
+
+.contato-especialista > h2{
+    font-family: 'Konnect Bold';
+    font-size: 72px;
+    line-height: 84px;
+
+    color: #FFFFFF;
+}
+
+.duvida-texto > h2{
+    font-family: 'Konnect Bold';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 93.5%;
+
+    /* or 39px */
+    text-transform: capitalize;
+
+    color: #000000;
+}
+
+.duvida-texto > span{
+    font-family: 'SVN-Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 135%;
+
+    /* or 22px */
+    letter-spacing: 1px;
+
     color: #7C7C7C;
 }
