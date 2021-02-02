@@ -117,6 +117,10 @@
     background-color: var(--primaria1);
 }
 
+.bg-secundaria {
+    background: #F3F3F3;
+}
+
 
 /* Classes úteis */
 
@@ -143,6 +147,10 @@
 
 .nav-link {
     color: inherit;
+}
+
+.navbar-toggler-icon {
+    color: var(--primaria1) !important;
 }
 
 .nav-item>.nav-link {
@@ -212,6 +220,25 @@
 .texto-vertical-header-right {
     position: absolute;
     right: 0px;
+    top: 200px;
+    color: white;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    height: 200px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 135%;
+    /* or 16px */
+    letter-spacing: 0.12em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.texto-vertical-header-left {
+    position: absolute;
+    left: 0px;
     top: 200px;
     color: white;
     writing-mode: vertical-rl;
@@ -670,4 +697,29 @@
     /* or 19px */
     letter-spacing: 0.01em;
     color: #FFFFFF;
+}
+
+
+/* Equipe */
+
+.texto-equipe>h2 {
+    font-family: 'Konnect Bold';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 93.5%;
+    /* or 39px */
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.texto-equipe>p {
+    font-family: 'SVN-Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 135%;
+    /* or 22px */
+    letter-spacing: 1px;
+    color: #7C7C7C;
 }
