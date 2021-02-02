@@ -119,6 +119,14 @@
     color: #FFFFFF;
 }
 
+.btn-arrow{
+    font-family: 'Konnect Regular';
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 0px;
+}
+
 
 /* Fundos */
 

@@ -16,7 +16,7 @@
 
 <body>
     <div class="container-fuild pb-5" id="container-header">
-        <div class="container d-none d-md-block">
+        <div class="container d-none d-lg-block">
             <div class="row">
                 <div class="col-12">
                     <span class="texto-vertical-header-right">
@@ -60,7 +60,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="nav-botao mt-2 d-none d-md-block">
+                <div class="nav-botao mt-2 d-none d-lg-block">
                     <button type="button" class="btn btn-outline-primary botao-mensagem">Envie uma Mensagem</button>
                 </div>
             </nav>
@@ -70,7 +70,7 @@
         </div> -->
         <div class="container">
             <div class="row mt-2 titulo-header-row">
-                <div class="col-12 col-md-6 py-5 text-center text-md-left">
+                <div class="col-12 col-lg-6 py-5 text-center text-lg-left">
                     <div class="titulo-header py-5">
                         <h2>FAÇA PARTE DO NOSSO TIME !</h2>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
@@ -84,46 +84,53 @@
     <div class="container px-4" id="contato1">
         <div class="row">
             <div class="col-12">
-                <div>
-                    <h4 id="titulo-contato1">Deixe seus dados que entramos em contato</h4>
+                <div class="row">
+                    <div class="col-md-6 text-left">
+                        <h4 id="titulo-contato1">Deixe seus dados que entramos em contato</h4>
+                    </div>
+                    <div class="col-md-6 text-right d-none d-lg-block">
+                        <input name="" id="" class="btn btn-arrow bg-primaria mx-n1" style="width: 50px; height: 50px;" type="button" value="<">
+                        <input name="" id="" class="btn btn-arrow bg-branco" style="width: 50px; height: 50px;" type="button" value=">">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="row bg-branco py-4 px-5" id="contato1-caixa">
             <div class="col-12">
                 <form id="form-contato1" action="" class="row" method="post">
-                    <div class="form-group col-12 col-md-4">
+                    <div class="form-group col-12 col-md-6 col-lg-4">
                         <label for="nome">Nome Completo</label>
                         <input type="text" class="form-control" name="nome" id="nome" aria-describedby="helpId" placeholder="">
                     </div>
-                    <div class="form-group col-12 col-md-4">
+                    <div class="form-group col-12 col-md-6 col-lg-4">
                         <label for="email">Email</label>
                         <input type="text" class="form-control" name="email" id="email" aria-describedby="helpId" placeholder="">
                     </div>
-                    <div class="form-group col-12 col-md-2">
+                    <div class="form-group col-12 col-md-6 col-lg-4">
                         <label for="telefone">Telefone</label>
                         <input type="text" class="form-control" name="telefone" id="telefone" aria-describedby="helpId" placeholder="">
                     </div>
-                    <div class="form-group col-12 col-md-2 d-flex align-items-end">
+                    <div class="form-group col-12 col-md-4 col-lg-2 d-flex align-items-end">
                         <button type="submit" class="btn btn-primary">Quero ser Fit <i class="fas fa-arrow-right ml-2"></i></button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    <!-- <div class="container-fluid pb-5""> -->
     <div class="container py-5 px-4 px-md-5" id="vem-treinar">
         <div class="row mt-5 px-4 px-md-5">
             <div class="col-12">
                 <div class="row mt-5">
-                    <div class="col-12 titulo-vem-treinar text-center text-md-left">
+                    <div class="col-12 titulo-vem-treinar text-center text-lg-left">
                         <h2>VEM TREINAR<br>COM A GENTE</h2>
                         <span>Viva a experiência de treinar com quem<br>foca no seu bem-estar.</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row mt-5 row-eq-height px-4 px-md-5">
+
+        <!-- PARA RESOLUÇÕES MENORES E MAIORES QUE MD -->
+        <div class="row mt-5 row-eq-height px-4 px-md-5 d-flex d-md-none d-lg-flex">
             <div class="col-12 col-md-4 text-center div-card-treino">
                 <div class="card py-4 h-100">
                     <img src="img/exercicio1.png" class="card-img-top mx-auto" alt="...">
@@ -158,7 +165,7 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-3 row-eq-height px-4 px-md-5">
+        <div class="row mt-3 row-eq-height px-4 px-md-5 d-flex d-md-none d-lg-flex">
             <div class="col-12 col-md-4 text-center div-card-treino">
                 <div class="card py-4 h-100">
                     <img src="img/exercicio4.png" class="card-img-top mx-auto" alt="...">
@@ -193,12 +200,81 @@
                 </div>
             </div>
         </div>
+
+        <!-- PARA RESOLUÇÕES MD -->
+        <div class="row mt-5 row-eq-height px-4 px-md-5 d-none d-md-flex d-lg-none">
+            <div class="col-12 col-md-6 col-lg-4 text-center div-card-treino">
+                <div class="card py-4 h-100">
+                    <img src="img/exercicio1.png" class="card-img-top mx-auto" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sua decisão, nossa caminhada</h5>
+                        <p class="card-text">Incentivamos você todos os dias a alcançar seus resultados.</p>
+                    </div>
+                    <a href="#">Saiba Mais <i class="fas fa-arrow-right ml-2"></i></a>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mt-3 text-center div-card-treino">
+                <div class="card py-4 h-100">
+                    <img src="img/exercicio2.png" class="card-img-top mx-auto" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Acompanhamento de perto </h5>
+                        <p class="card-text">Orientações corretas trazem um resultado incrível. Aqui, sua meta é acompanhada diariamente para garantir seu sucesso.</p>
+                    </div>
+                    <a href="#">Saiba Mais <i class="fas fa-arrow-right ml-2"></i></a>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mt-3 text-center div-card-treino">
+                <div class="card py-4 h-100">
+                    <img src="img/exercicio3.png" class="card-img-top mx-auto" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Gente que cuida da gente</h5>
+                        <p class="card-text">Profissionais qualificados, acessíveis e com experiência para cuidar da sua saúde e bem-estar.</p>
+                    </div>
+                    <a href="#">Saiba Mais <i class="fas fa-arrow-right ml-2"></i></a>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mt-3 text-center div-card-treino">
+                <div class="card py-4 h-100">
+                    <img src="img/exercicio4.png" class="card-img-top mx-auto" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Segurança</h5>
+                        <p class="card-text">Mantemos nossos equipamentos limpos e com vistoria em dia. Sua segurança é muito importante para nós.</p>
+                    </div>
+                    <a href="#">Saiba Mais <i class="fas fa-arrow-right ml-2"></i></a>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mt-3 text-center div-card-treino">
+                <div class="card py-4 h-100">
+                    <img src="img/exercicio5.png" class="card-img-top mx-auto" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Planos diferenciados</h5>
+                        <p class="card-text">Nossos planos foram pensados para que caibam na sua rotina e no seu bolso.</p>
+                    </div>
+                    <a href="#">Saiba Mais <i class="fas fa-arrow-right ml-2"></i></a>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mt-3 text-center div-card-treino">
+                <div class="card py-4 h-100">
+                    <img src="img/exercicio6.png" class="card-img-top mx-auto" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Atualização constante</h5>
+                        <p class="card-text">Estamos sempre em busca de trazer mais qualidade para os nossos alunos.</p>
+                    </div>
+                    <a href="#">Saiba Mais <i class="fas fa-arrow-right ml-2"></i></a>
+
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- </div> -->
     <div class="container px-0" id="conheca">
         <div class="row ml-0">
-            <div class="col-12 col-md-7 px-4 px-md-5 py-5" style="background: #F8F8F8;">
+            <div class="col-12 col-lg-7 px-4 px-lg-5 py-5" style="background: #F8F8F8;">
                 <div class="px-4 px-md-5 texto-conheca text-center text-md-left">
                     <h2>MUITO PRAZER</h2>
                     <p>
@@ -207,7 +283,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-12 col-md-5 pl-0">
+            <div class="col-12 col-lg-5 pl-0">
                 <img src="img/imagem-conheca.png " style="width:100%; height: 100%; overflow:hidden; " alt="Imagem Conheça ">
             </div>
         </div>
@@ -215,22 +291,22 @@
 
     <div class="container" id="preco">
         <div class="row bg-primaria">
-            <div class="col-12 col-md-6 px-4 px-md-5 pt-5">
-                <div class="px-4 px-md-5 texto-preco text-center text-md-left">
+            <div class="col-12 col-lg-6 px-4 px-lg-5 pt-5">
+                <div class="px-4 px-lg-5 texto-preco text-center text-lg-left">
                     <h2>VEM SER FIT COM A GENTE</h2>
                     <p>
                         Indicado pra quem já cansou de não ter resultados. Novos hábitos e uma rotina de treinamentos que cabe na sua agenda!
                     </p>
-                    <div class="texto-preco mt-md-n4 text-center">
+                    <div class="texto-preco mt-lg-n4 text-center">
                         <span class="mt-n5" style="font-size:calc(30px + 0.5vw);">R$</span>
                         <span class="mt-n5" style="font-size:calc(60px + 4vw);">79</span><span style="font-size:calc(45px + 1vw);">,00</span>
                     </div>
-                    <div class="text-center mt-3 mt-md-1">
+                    <div class="text-center mt-3 mt-lg-1">
                         <button type="submit" class="btn btn-black">Quero ser Fit <i class="fas fa-arrow-right ml-2"></i></button>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 pt-5" style="position: relative; bottom: -2rem;">
+            <div class="col-12 col-lg-6 pt-5" style="position: relative; bottom: -2rem;">
                 <div class="row">
                     <div class="col-12">
                         <div class="row">
@@ -253,17 +329,17 @@
     </div>
     <div class="container" id="contato2">
         <div class="row py-5">
-            <div class="d-flex align-items-center col-12 col-md-5 mt-5 px-4 px-md-5">
-                <div class="px-4 px-md-5 texto-conheca text-center text-md-left">
+            <div class="d-flex align-items-center col-12 col-lg-5 mt-5 px-4 px-lg-5">
+                <div class="px-4 px-lg-5 texto-conheca text-center text-lg-left">
                     <h2>NÓS DESAFIAMOS VOCÊ</h2>
                     <p>
                         Teste nosso método gratuitamente por 7 dias e viva na pele a experiência de treinar com quem foca em você.
                     </p>
                 </div>
             </div>
-            <div class="col-12 offset-md-1 col-md-5 mt-5">
+            <div class="col-12 offset-lg-1 col-lg-5 mt-5">
                 <div class="row">
-                    <div class="col-12 bg-branco card-contato py-5 px-4 px-md-5 text-center">
+                    <div class="col-12 bg-branco card-contato py-5 px-4 px-lg-5 text-center">
                         <h4>É resultado que você busca? Então está no lugar certo!</h4>
                         <form class="text-left mt-4" action="" method="post">
                             <div class="form-group">
@@ -278,7 +354,7 @@
                                 <label for="telefone">Telefone</label>
                                 <input type="text" class="form-control" name="telefone" id="telefone" aria-describedby="helpId" placeholder="(35) 99999-9999">
                             </div>
-                            <div class="form-group px-4 px-md-5 mt-4 mt-md-0 text-center">
+                            <div class="form-group px-4 px-lg-5 mt-4 mt-lg-0 text-center">
                                 <button type="submit" class="btn btn-primary">Desafio aceito <i class="fas fa-arrow-right ml-2"></i></button>
                             </div>
                         </form>
@@ -291,8 +367,8 @@
         <div class="row py-5">
             <div class="col-12">
                 <div class="row">
-                    <div class="col-12 col-md-9 text-left py-5 px-4 px-md-5">
-                        <div class="px-4 px-md-5 texto-conheca text-center text-md-left">
+                    <div class="col-12 col-lg-9 text-left py-5 px-4 px-lg-5">
+                        <div class="px-4 px-lg-5 texto-conheca text-center text-lg-left">
                             <h2>PROGRAMAS</h2>
                             <p>
                                 Programas com atividades desenvolvidas especialmente para cuidar da sua saúde e bem-estar, além de te auxiliarem a chegar no seu objetivo, que é único e deve ser tratado de forma singular.
@@ -300,18 +376,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="px-4 px-md-5">
-                    <div class="row px-4 px-md-5">
-                        <div class="col-12 col-sm-6 col-md-3 mt-3 mt-md-0 imagem-programa">
+                <div class="px-4 px-lg-5">
+                    <div class="row px-4 px-lg-5">
+                        <div class="col-12 col-sm-6 col-lg-3 mt-3 mt-lg-0 imagem-programa">
                             <img src="img/programa1.png" style="width: 100%;" alt="">
                         </div>
-                        <div class="col-12 col-sm-6 col-md-3 mt-3 mt-md-0 imagem-programa">
+                        <div class="col-12 col-sm-6 col-lg-3 mt-3 mt-lg-0 imagem-programa">
                             <img src="img/programa1.png" style="width: 100%;" alt="">
                         </div>
-                        <div class="col-12 col-sm-6 col-md-3 mt-3 mt-md-0 imagem-programa">
+                        <div class="col-12 col-sm-6 col-lg-3 mt-3 mt-lg-0 imagem-programa">
                             <img src="img/programa1.png" style="width: 100%;" alt="">
                         </div>
-                        <div class="col-12 col-sm-6 col-md-3 mt-3 mt-md-0 imagem-programa">
+                        <div class="col-12 col-sm-6 col-lg-3 mt-3 mt-lg-0 imagem-programa">
                             <img src="img/programa1.png" style="width: 100%;" alt="">
                         </div>
                     </div>
@@ -321,37 +397,37 @@
     </div>
     <div class="container" id="video">
         <div class="row">
-            <div class="col-12 col-md-5 px-4 px-md-5 pt-5">
-                <div class="px-4 px-md-5 texto-video text-center text-md-left">
+            <div class="col-12 col-lg-5 px-4 px-lg-5 pt-5">
+                <div class="px-4 px-lg-5 texto-video text-center text-lg-left">
                     <h2>VEM CONHECER QUEM JÁ É FIT</h2>
                     <p>
                         Aqui formamos uma família! Assista aos depoimentos dos alunos que já se tornarem fit com a gente.
                     </p>
                 </div>
             </div>
-            <div class="col-12 col-md-5 pt-5">
+            <div class="col-12 col-lg-5 pt-5">
                 <img class="video-preview" src="img/preview-video.png" alt="">
             </div>
         </div>
     </div>
     <div class="container mt-n5" id="depoimentos">
         <div class="row">
-            <div class="col-12 px-4 px-md-5 py-5 mt-3">
-                <div class="px-4 px-md-5 text-center text-md-left titulo-depoimento">
+            <div class="col-12 px-4 px-lg-5 py-5 mt-3">
+                <div class="px-4 px-lg-5 text-center text-lg-left titulo-depoimento">
                     <h4>Depoimentos</h4>
                     <span>Veja o que falam do Apollo Sports</span>
                 </div>
             </div>
         </div>
-        <div class="row px-4 px-md-5 pt-2 pb-5 mt-n4">
-            <div class="col-12 col-md-6">
+        <div class="row px-4 px-lg-5 pt-2 pb-5 mt-n4">
+            <div class="col-12 col-lg-6">
                 <div class="card-depoimento">
                     <div class="container">
                         <div class="row py-3 px-3">
-                            <div class="col-12 col-md-3 text-center">
+                            <div class="col-12 col-lg-3 text-center">
                                 <img src="img/foto-perfil.png" alt="">
                             </div>
-                            <div class="col-12 col-md-9 text-center text-md-left texto-card-depoimento">
+                            <div class="col-12 col-lg-9 text-center text-lg-left texto-card-depoimento">
                                 <h4>Natalia </h4>
                                 <h5>Designer</h5>
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium sed iaculis mauris nisl vulputate mollis vulputate.</span>
@@ -360,14 +436,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 mt-3 mt-md-0">
+            <div class="col-12 col-lg-6 mt-3 mt-lg-0">
                 <div class="card-depoimento">
                     <div class="container">
                         <div class="row py-3 px-3">
-                            <div class="col-12 col-md-3 text-center">
+                            <div class="col-12 col-lg-3 text-center">
                                 <img src="img/foto-perfil.png" alt="">
                             </div>
-                            <div class="col-12 col-md-9 text-center text-md-left texto-card-depoimento">
+                            <div class="col-12 col-lg-9 text-center text-lg-left texto-card-depoimento">
                                 <h4>Natalia </h4>
                                 <h5>Designer</h5>
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium sed iaculis mauris nisl vulputate mollis vulputate.</span>
@@ -380,13 +456,13 @@
     </div>
     <div class="container" id="covid">
         <div class="row py-5 justify-content-center">
-            <div class="col-12 col-md-6 px-4 px-md-5 text-center texto-covid">
+            <div class="col-12 col-lg-6 px-4 px-lg-5 text-center texto-covid">
                 <h2>Covid-19</h2>
                 <span>Juntos somos mais fortes e só assim faremos da nossa academia um lugar seguro para todos. Sua saúde é prioridade aqui! Algumas mudanças importantes:</span>
             </div>
         </div>
-        <div class="row px-4 px-md-5 py-5">
-            <div class="col-6 col-md-3 px-4 px-md-5">
+        <div class="row px-4 px-lg-5 py-5">
+            <div class="col-6 col-lg-3 px-4 px-lg-5">
                 <div class="row">
                     <div class="col-12 text-center titulo-card-covid">
                         <span>Desinfecção</span>
@@ -403,7 +479,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-3 px-4 px-md-5">
+            <div class="col-6 col-lg-3 px-4 px-lg-5">
                 <div class="row">
                     <div class="col-12 text-center titulo-card-covid">
                         <span>Distânciamento</span>
@@ -420,7 +496,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-3 px-4 px-md-5 mt-3 mt-md-0">
+            <div class="col-6 col-lg-3 px-4 px-lg-5 mt-3 mt-lg-0">
                 <div class="row">
                     <div class="col-12 text-center titulo-card-covid">
                         <span>Agendamento</span>
@@ -437,7 +513,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-3 px-4 px-md-5 mt-3 mt-md-0">
+            <div class="col-6 col-lg-3 px-4 px-lg-5 mt-3 mt-lg-0">
                 <div class="row">
                     <div class="col-12 text-center titulo-card-covid">
                         <span>Temperatura</span>
@@ -460,27 +536,27 @@
         <div class="row py-5">
             <div class="col-12">
                 <div class="container">
-                    <div class="row px-4 px-md-5">
-                        <div class="col-12 col-md-4">
+                    <div class="row px-4 px-lg-5">
+                        <div class="col-12 col-lg-4">
                             <div class="row">
-                                <div class="col-12 px-4 px-md-5 text-center text-md-left">
+                                <div class="col-12 px-4 px-lg-5 text-center text-lg-left">
                                     <img src="img/logo.png" style="max-width:100%" alt="">
                                 </div>
                             </div>
                             <div class="row mt-4">
-                                <div class="col-12 footer-logo-texto pl-5 pr-4 text-center text-md-left">
+                                <div class="col-12 footer-logo-texto pl-5 pr-4 text-center text-lg-left">
                                     There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-lg-4">
                             <div class="row">
-                                <div class="col-12 px-4 px-md-5 footer-links-titulo text-center text-md-left text-md-left mt-5 mt-md-0">
+                                <div class="col-12 px-4 px-lg-5 footer-links-titulo text-center text-lg-left text-lg-left mt-5 mt-lg-0">
                                     <h2>Links</h2>
                                 </div>
                             </div>
-                            <div class="row mt-4 text-center text-md-left">
-                                <div class="col-12 footer-links-texto pl-0 pl-md-5 pr-0 pr-md-4">
+                            <div class="row mt-4 text-center text-lg-left">
+                                <div class="col-12 footer-links-texto pl-0 pl-lg-5 pr-0 pr-lg-4">
                                     <ul class="px-1" style="list-style: none;">
                                         <li class="my-2">Vem treinar com a gente</li>
                                         <li class="my-2">Muito prazer</li>
@@ -490,13 +566,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-lg-4">
                             <div class="row">
-                                <div class="col-12 px-4 px-md-5 footer-links-titulo text-center text-md-left text-md-left mt-5 mt-md-0">
+                                <div class="col-12 px-4 px-lg-5 footer-links-titulo text-center text-lg-left text-lg-left mt-5 mt-lg-0">
                                     <h2>Contato</h2>
                                 </div>
                             </div>
-                            <div class="row mt-4">
+                            <div class="row mt-4 text-center text-lg-left">
                                 <div class="col-12 pl-5 pr-4">
                                     <p class="footer-lista-contato">
                                         <i class="icone-contato far fa-envelope"></i>
@@ -514,28 +590,28 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row px-4 px-md-5 mt-3">
-                        <div class="d-flex align-items-center col-12 col-md-4 px-4 px-md-5 my-3 text-center text-md-left my-md-0 text-white">
+                    <div class="row px-4 px-lg-5 mt-3">
+                        <div class="d-flex align-items-center col-12 col-lg-4 px-4 px-lg-5 my-3 text-center text-lg-left my-lg-0 text-white">
                             <div class="w-100">
                                 <i class="fab fa-facebook"></i>
                                 <i class="fab fa-instagram ml-3"></i>
                                 <i class="fab fa-twitter ml-3"></i>
                             </div>
                         </div>
-                        <div class="col-12 offset-md-4 col-md-4 px-4 px-md-5">
+                        <div class="col-12 offset-lg-4 col-lg-4 px-4 px-lg-5 text-center text-lg-left">
                             <img src="img/mapa.png" style="max-width: 100%;" alt="">
                         </div>
                     </div>
-                    <div class="row px-4 px-md-5 text-white">
-                        <div class="col-12 px-4 px-md-5">
+                    <div class="row px-4 px-lg-5 text-white">
+                        <div class="col-12 px-4 px-lg-5">
                             <hr style="border: 1px solid white;">
                         </div>
                     </div>
-                    <div class="row px-4 px-md-5 text-white">
-                        <div class="col-12 col-md-6 text-center text-md-left copyright px-4 px-md-5 my-3 text-center text-md-left my-md-0">
+                    <div class="row px-4 px-lg-5 text-white">
+                        <div class="col-12 col-lg-6 text-center text-lg-left copyright px-4 px-lg-5 my-3 text-center text-lg-left my-lg-0">
                             <span>© 2021 Apollo Sports - Todos os direitos reservados</span>
                         </div>
-                        <div class="col-12 col-md-6 text-center text-md-right copyright2 px-4 px-md-5 my-3 text-center text-md-right my-md-0">
+                        <div class="col-12 col-lg-6 text-center text-lg-right copyright2 px-4 px-lg-5 my-3 text-center text-lg-right my-lg-0">
                             <span>Desenvolvido por <img src="img/7seven.png" alt=""> com metodologia <img src="img/gefit.png" alt=""></span>
                         </div>
                     </div>
