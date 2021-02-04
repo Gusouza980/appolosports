@@ -89,8 +89,8 @@
                         <h4 id="titulo-contato1">Deixe seus dados que entramos em contato</h4>
                     </div>
                     <div class="col-md-6 text-right d-none d-lg-block">
-                        <input name="" id="" class="btn btn-arrow bg-primaria mx-n1" style="width: 50px; height: 50px;" type="button" value="<">
-                        <input name="" id="" class="btn btn-arrow bg-branco" style="width: 50px; height: 50px;" type="button" value=">">
+                        <button class="btn btn-arrow bg-primaria mx-n1" style="width: 50px; height: 50px;" type="button"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                        <button class="btn btn-arrow bg-branco" style="width: 50px; height: 50px;" type="button"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
                     </div>
                 </div>
             </div>
@@ -274,7 +274,7 @@
 
     <div class="container px-0" id="conheca">
         <div class="row ml-0">
-            <div class="col-12 col-lg-7 px-4 px-lg-5 py-5" style="background: #F8F8F8;">
+            <div class="col-12 col-lg-7 px-4 px-lg-5 py-5" style="background: #F8F8F8; position: relative;">
                 <div class="px-4 px-md-5 texto-conheca text-center text-md-left">
                     <h2>MUITO PRAZER</h2>
                     <p>
@@ -282,9 +282,15 @@
                         amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
                 </div>
+                <div class="d-none d-lg-block" style="position: absolute; bottom: 0px; right: 0px;">
+                    <button class="btn btn-arrow bg-primaria mx-n1" style="width: 50px; height: 50px;" type="button"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                </div>
             </div>
-            <div class="col-12 col-lg-5 pl-0">
+            <div class="col-12 col-lg-5 pl-0" style="position: relative;">
                 <img src="img/imagem-conheca.png " style="width:100%; height: 100%; overflow:hidden; " alt="Imagem Conheça ">
+                <div class="d-none d-lg-block" style="position: absolute; bottom: 0px; left: 0px;">
+                    <button class="btn btn-arrow bg-branco" style="width: 50px; height: 50px;" type="button"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </div>
             </div>
         </div>
     </div>
@@ -376,7 +382,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="px-4 px-lg-5">
+                <div class="px-4 px-lg-5" style="position: relative;">
+                    <div class="d-none d-lg-block" style="position: absolute; top: 50%; left: 0px;">
+                        <button class="btn btn-arrow bg-branco " style="width: 50px; height: 50px;" type="button"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="d-none d-lg-block" style="position: absolute; top: 50%; right: 0px;">
+                        <button class="btn btn-arrow bg-branco" style="width: 50px; height: 50px;" type="button"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                    </div>
                     <div class="row px-4 px-lg-5">
                         <div class="col-12 col-sm-6 col-lg-3 mt-3 mt-lg-0 imagem-programa">
                             <img src="img/programa1.png" style="width: 100%;" alt="">
@@ -419,8 +431,13 @@
                 </div>
             </div>
         </div>
-        <div class="row px-4 px-lg-5 pt-2 pb-5 mt-n4">
-            <div class="col-12 col-lg-6">
+        <div class="row px-4 px-lg-5 pt-2 pb-5 mt-n4" style="position: relative;">
+            <div class="d-none d-lg-block mx-5" style="position: absolute; bottom: 0px; right: 0px;">
+                <button name="" id="" class="btn btn-arrow bg-primaria" style="width: 50px; height: 50px;" type="button"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                <button name="" id="" class="btn btn-arrow bg-branco" style="width: 50px; height: 50px;" type="button"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+
+            </div>
+            <div class="col-12 col-lg-6 my-0 my-lg-3">
                 <div class="card-depoimento">
                     <div class="container">
                         <div class="row py-3 px-3">
@@ -436,7 +453,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 mt-3 mt-lg-0">
+            <!-- <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <i class="fa fa-arrow-right" aria-hidden="true"></i> -->
+            <div class="col-12 col-lg-6 mt-3 mb-0 my-lg-3">
                 <div class="card-depoimento">
                     <div class="container">
                         <div class="row py-3 px-3">
