@@ -106,8 +106,8 @@
     color: #FDD00C;
 }
 
-.btn-black:hover{
-    color:#FDD00C;
+.btn-black:hover {
+    color: #FDD00C;
 }
 
 .btn-green {
@@ -120,6 +120,10 @@
     align-items: center;
     text-align: center;
     color: #FFFFFF;
+}
+
+.btn-green:hover {
+    color: white;
 }
 
 .btn-arrow {
@@ -154,11 +158,11 @@
     background-color: #F3F3F3;
 }
 
-.bg-cinza{
+.bg-cinza {
     background-color: var(--fundo1);
 }
 
-.bg-cinza2{
+.bg-cinza2 {
     background: #F8F8F8;
 }
 
@@ -266,7 +270,7 @@
 .texto-vertical-header-right {
     position: absolute;
     right: 0px;
-    top: 200px;
+    top: 150px;
     color: white;
     writing-mode: vertical-lr;
     text-orientation: mixed;
@@ -293,7 +297,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 135%;
     /* or 16px */
     letter-spacing: 0.12em;
@@ -663,6 +667,10 @@
     color: #000000;
 }
 
+.img-card-covid>img {
+    width: 100%;
+}
+
 .texto-card-covid {
     font-family: 'SVN-Gilroy';
     font-style: normal;
@@ -827,4 +835,76 @@
     /* or 22px */
     letter-spacing: 1px;
     color: #7C7C7C;
+}
+
+.MultiCarousel {
+    float: left;
+    overflow: hidden;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+}
+
+.MultiCarousel .MultiCarousel-inner {
+    transition: 1s ease all;
+    float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item {
+    float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item>div {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    /* background: #f1f1f1; */
+    color: #666;
+}
+
+.MultiCarousel .leftLst,
+.MultiCarousel .rightLst {
+    /* position: absolute;
+    border-radius: 50%;
+    top: calc(50% - 20px); */
+}
+
+.MultiCarousel .leftLst {
+    /* left: 0; */
+}
+
+.MultiCarousel .rightLst {
+    /* right: 0; */
+}
+
+.MultiCarousel .leftLst.over,
+.MultiCarousel .rightLst.over {
+    /* pointer-events: none;
+    background: #ccc; */
+}
+
+.text-parabens>h4 {
+    font-family: 'Konnect Bold';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 109%;
+    /* or 70px */
+    text-align: center;
+    color: #000000;
+}
+
+.text-parabens>span {
+    font-family: 'Konnect Bold';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 109%;
+    /* or 70px */
+    text-align: center;
+    color: #000000;
+}
+
+.text-parabens>img {
+    max-width: 200px;
 }
