@@ -253,11 +253,11 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 135%;
+    font-size: 13px;
+    /* line-height: 135%; */
     /* or 16px */
     letter-spacing: 0.12em;
-    text-transform: capitalize;
+    text-transform: uppercase;
     color: white;
 }
 
@@ -270,11 +270,11 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 135%;
+    font-size: 13px;
+    /* line-height: 135%; */
     /* or 16px */
     letter-spacing: 0.12em;
-    text-transform: capitalize;
+    text-transform: uppercase;
     color: var(--primaria1);
 }
 
