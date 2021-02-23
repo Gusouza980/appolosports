@@ -16,6 +16,9 @@
 
 <body>
     <div class="container-fuild pb-5 carousel slide" data-ride="carousel" id="container-header" img="0">
+        <img class="img-header active" img="0" src="img/fundo1.png">
+        <img class="img-header" img="1" style="display: none;" src="img/fundo2.png">
+        <img class="img-header" img="2" style="display: none;" src="img/fundo3.png">
         <div class="container d-none d-lg-block">
             <div class="row">
                 <div class="col-12">
@@ -575,36 +578,42 @@
             });
 
             $('#container-header').on('slide.bs.carousel', function() {
-                var pos = $('#container-header').attr("img");
-                if (pos < imgs_header.length) {
+                var pos = $('.img-header.active').attr("img");
+                $('.img-header.active').hide(500);
+                $('.img-header.active').removeClass("active");
+                if (pos < $('.img-header').length - 1) {
                     pos++;
                 } else {
                     pos = 0;
                 }
-                $('#container-header').attr("img", pos);
-                $('#container-header').css("background-image", imgs_header[pos]);
+                $('.img-header[img="'+pos+'"').show(500);
+                $('.img-header[img="'+pos+'"').addClass('active');
             });
 
             $("#img-header-ant").click(function() {
-                var pos = $('#container-header').attr("img");
+                var pos = $('.img-header.active').attr("img");
+                $('.img-header.active').hide(500);
+                $('.img-header.active').removeClass("active");
                 if (pos > 0) {
                     pos--;
                 } else {
-                    pos = imgs_header.length - 1;
+                    pos = $('.img-header').length - 1;
                 }
-                $('#container-header').attr("img", pos);
-                $('#container-header').css("background-image", imgs_header[pos]);
+                $('.img-header[img="'+pos+'"').show(500);
+                $('.img-header[img="'+pos+'"').addClass('active');
             });
 
             $("#img-header-prox").click(function() {
-                var pos = $('#container-header').attr("img");
-                if (pos < imgs_header.length) {
+                var pos = $('.img-header.active').attr("img");
+                $('.img-header.active').hide(500);
+                $('.img-header.active').removeClass("active");
+                if (pos < $('.img-header').length - 1) {
                     pos++;
                 } else {
                     pos = 0;
                 }
-                $('#container-header').attr("img", pos);
-                $('#container-header').css("background-image", imgs_header[pos]);
+                $('.img-header[img="'+pos+'"').show(500);
+                $('.img-header[img="'+pos+'"').addClass('active');
             });
 
             // Eventos do slide de depoimentos
