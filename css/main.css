@@ -36,6 +36,11 @@
     --fundo-footer: #27272D;
 }
 
+/* Utils */
+
+.cpointer{
+    cursor: pointer;
+}
 
 /* Botões */
 
@@ -248,7 +253,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 135%;
     /* or 16px */
     letter-spacing: 0.12em;
@@ -265,7 +270,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 135%;
     /* or 16px */
     letter-spacing: 0.12em;
@@ -358,7 +363,7 @@
 
 #contato1 {
     background-color: transparent;
-    margin-top: -6rem;
+    margin-top: -4.5rem;
     position: relative;
     z-index: 99999;
 }
