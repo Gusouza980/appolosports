@@ -698,15 +698,16 @@
                         <div class="col-12 col-lg-4">
                             <div class="row">
                                 <div class="col-12 px-4 px-lg-5 footer-links-titulo text-center text-lg-left text-lg-left mt-5 mt-lg-0">
-                                    <h2>Páginas</h2>
+                                    <h2>Seções</h2>
                                 </div>
                             </div>
                             <div class="row mt-4 text-center text-lg-left">
                                 <div class="col-12 footer-links-texto pl-0 pl-lg-5 pr-0 pr-lg-4">
                                     <ul class="px-1" style="list-style: none;">
-                                        <li class="my-2">Vem treinar com a gente</li>
-                                        <li class="my-2">Muito prazer</li>
-                                        <li class="my-2">Programas</li>
+                                        <li class="my-2 nav-item-footer"><a class="nav-link-footer cpointer" data-target="#navbar">Inicio</a></li>
+                                        <li class="my-2 nav-item-footer"><a class="nav-link-footer cpointer" data-target="#vem-treinar">Vem treinar com a gente</a></li>
+                                        <li class="my-2 nav-item-footer"><a class="nav-link-footer cpointer" data-target="#conheca">Muito prazer</a></li>
+                                        <li class="my-2 nav-item-footer"><a class="nav-link-footer cpointer" data-target="#programas">Programas</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -950,6 +951,15 @@
 
             $(".nav-item").click(function() {
                 $(".nav-item").removeClass("active");
+                $(this).addClass("active");
+                var section = $(this).children().attr("data-target");
+                $([document.documentElement, document.body]).animate({
+                    scrollTop: $(section).offset().top - ($("#navbar").height())
+                }, 1000);
+            });
+
+            $(".nav-item-footer").click(function() {
+                $(".nav-item-footer").removeClass("active");
                 $(this).addClass("active");
                 var section = $(this).children().attr("data-target");
                 $([document.documentElement, document.body]).animate({

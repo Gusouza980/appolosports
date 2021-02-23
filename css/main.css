@@ -42,6 +42,11 @@
     cursor: pointer;
 }
 
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Botões */
 
 .btn-outline-primary {
@@ -277,6 +282,7 @@
     text-transform: uppercase;
     color: var(--primaria1);
 }
+
 
 .nav-botao>.botao-mensagem {
     width: 234.23px;
@@ -809,6 +815,30 @@
     /* or 19px */
     letter-spacing: 0.01em;
     color: #FFFFFF;
+}
+
+.nav-item-footer>.nav-link-footer {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 135%;
+    /* or 19px */
+    letter-spacing: 0.12em;
+    text-transform: capitalize;
+    color: #FFC94B;
+}
+
+.nav-item-footer.active>.nav-link-footer {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 135%;
+    /* or 19px */
+    letter-spacing: 0.12em;
+    text-transform: capitalize;
+    color: #FFC94B;
 }
 
 
