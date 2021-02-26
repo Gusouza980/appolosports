@@ -130,7 +130,6 @@ a, a:hover, a:focus, a:active {
 
 .btn-black {
     width: 201.06px;
-    height: 51.23px;
     left: 446.74px;
     top: 3047.25px;
     background: #000000;
@@ -138,7 +137,7 @@ a, a:hover, a:focus, a:active {
     font-size: 14px;
     line-height: 135%;
     /* identical to box height, or 19px */
-    text-transform: capitalize;
+    
     color: #FDD00C;
 }
 
@@ -313,7 +312,7 @@ a, a:hover, a:focus, a:active {
     font-size: 53.6833px;
     line-height: 109%;
     /* identical to box height, or 59px */
-    text-transform: capitalize;
+    
     color: #FFFFFF;
 }
 
@@ -322,7 +321,7 @@ a, a:hover, a:focus, a:active {
     font-size: 18px;
     line-height: 135%;
     /* or 24px */
-    text-transform: capitalize;
+    
     color: #FFFFFF;
 }
 
@@ -341,7 +340,7 @@ a, a:hover, a:focus, a:active {
     line-height: 135%;
     /* or 16px */
     letter-spacing: 0.12em;
-    text-transform: capitalize;
+    
     color: #FFFFFF;
 }
 
@@ -360,7 +359,7 @@ a, a:hover, a:focus, a:active {
     line-height: 135%;
     /* or 16px */
     letter-spacing: 0.12em;
-    text-transform: capitalize;
+    
     color: #FFFFFF;
 }
 
@@ -393,7 +392,7 @@ a, a:hover, a:focus, a:active {
     font-size: 13px;
     line-height: 135%;
     /* identical to box height, or 18px */
-    text-transform: capitalize;
+    
     color: #000000;
 }
 
@@ -407,7 +406,7 @@ a, a:hover, a:focus, a:active {
     font-size: 14px;
     line-height: 135%;
     /* identical to box height, or 19px */
-    text-transform: capitalize;
+    
     color: #000000;
     width: 149.35px;
     height: 51.23px;
@@ -435,7 +434,7 @@ a, a:hover, a:focus, a:active {
     font-size: 42px;
     line-height: 93.5%;
     /* or 39px */
-    text-transform: capitalize;
+    
     color: #000000;
 }
 
@@ -466,7 +465,7 @@ a, a:hover, a:focus, a:active {
     line-height: 34px;
     /* or 114% */
     text-align: center;
-    text-transform: capitalize;
+    
     color: #000000;
 }
 
@@ -508,7 +507,6 @@ a, a:hover, a:focus, a:active {
     font-size: 42px;
     line-height: 135%;
     /* identical to box height, or 57px */
-    text-transform: capitalize;
     color: #000000;
 }
 
@@ -517,7 +515,7 @@ a, a:hover, a:focus, a:active {
     font-size: 18px;
     line-height: 135%;
     /* or 24px */
-    text-transform: capitalize;
+    
     color: #000000;
 }
 
@@ -531,7 +529,7 @@ a, a:hover, a:focus, a:active {
     font-size: 42px;
     line-height: 97.5%;
     /* or 41px */
-    text-transform: capitalize;
+    
 }
 
 .texto-preco>p {
@@ -539,7 +537,7 @@ a, a:hover, a:focus, a:active {
     font-size: 18px;
     line-height: 135%;
     /* or 24px */
-    text-transform: capitalize;
+    
     color: #000000;
 }
 
@@ -552,7 +550,7 @@ a, a:hover, a:focus, a:active {
     /* font-size: 197.928px; */
     /* line-height: 262px; */
     letter-spacing: -0.055em;
-    text-transform: capitalize;
+    
 }
 
 
@@ -569,7 +567,7 @@ a, a:hover, a:focus, a:active {
     font-size: 24.6008px;
     line-height: 135%;
     /* or 33px */
-    text-transform: capitalize;
+    
     color: #000000;
 }
 
@@ -578,7 +576,7 @@ a, a:hover, a:focus, a:active {
     font-size: 13px;
     line-height: 135%;
     /* identical to box height, or 18px */
-    text-transform: capitalize;
+    
     color: #000000;
 }
 
@@ -592,7 +590,7 @@ a, a:hover, a:focus, a:active {
     font-size: 14px;
     line-height: 135%;
     /* identical to box height, or 19px */
-    text-transform: capitalize;
+    
     color: #000000;
     width: 197.84px;
     height: 51.23px;
@@ -619,7 +617,7 @@ a, a:hover, a:focus, a:active {
     font-size: 42px;
     line-height: 93.5%;
     /* or 39px */
-    text-transform: capitalize;
+    
     color: #000000;
 }
 
@@ -665,7 +663,7 @@ a, a:hover, a:focus, a:active {
     font-size: 18px;
     line-height: 34px;
     /* identical to box height, or 187% */
-    text-transform: capitalize;
+    
     color: #000000;
 }
 
@@ -700,7 +698,7 @@ a, a:hover, a:focus, a:active {
     font-size: 42px;
     line-height: 93.5%;
     /* or 39px */
-    text-transform: capitalize;
+    
     color: #000000;
 }
 
@@ -722,7 +720,7 @@ a, a:hover, a:focus, a:active {
     font-size: 18px;
     line-height: 16px;
     /* identical to box height, or 187% */
-    text-transform: capitalize;
+    
     color: #000000;
 }
 
@@ -759,7 +757,7 @@ a, a:hover, a:focus, a:active {
     line-height: 135%;
     /* or 19px */
     letter-spacing: 0.01em;
-    text-transform: capitalize;
+    
     color: #FFFFFF;
 }
 
@@ -770,7 +768,7 @@ a, a:hover, a:focus, a:active {
     font-size: 24.6253px;
     line-height: 135%;
     /* identical to box height, or 33px */
-    text-transform: capitalize;
+    
     color: #FFFFFF;
 }
 
@@ -782,7 +780,7 @@ a, a:hover, a:focus, a:active {
     line-height: 135%;
     /* or 19px */
     letter-spacing: 0.12em;
-    text-transform: capitalize;
+    
     color: #FFC94B;
 }
 
@@ -825,7 +823,7 @@ a, a:hover, a:focus, a:active {
     line-height: 135%;
     /* or 19px */
     letter-spacing: 0.12em;
-    text-transform: capitalize;
+    
     color: #FFC94B;
 }
 
@@ -837,7 +835,7 @@ a, a:hover, a:focus, a:active {
     line-height: 135%;
     /* or 19px */
     letter-spacing: 0.12em;
-    text-transform: capitalize;
+    
     color: #FFC94B;
 }
 
@@ -851,7 +849,7 @@ a, a:hover, a:focus, a:active {
     font-size: 42px;
     line-height: 93.5%;
     /* or 39px */
-    text-transform: capitalize;
+    
     color: #000000;
 }
 
@@ -898,8 +896,8 @@ a, a:hover, a:focus, a:active {
 
 .contato-especialista>h2 {
     font-family: 'Konnect Bold';
-    font-size: 72px;
-    line-height: 84px;
+    font-size: 40px;
+    line-height: 50px;
     color: #FFFFFF;
 }
 
@@ -910,7 +908,7 @@ a, a:hover, a:focus, a:active {
     font-size: 42px;
     line-height: 93.5%;
     /* or 39px */
-    text-transform: capitalize;
+    
     color: #000000;
 }
 
