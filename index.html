@@ -38,7 +38,7 @@
             <div class="d-flex col-12 px-5 justify-content-center"> -->
         <div class="container">
             <nav class="navbar navbar-expand-lg" id="navbar">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="/">
                     <img class="mt-3" src="img/logo.png" alt="Logo Apollo Sports">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +49,7 @@
                 <div class="collapse navbar-collapse text-center" id="navbarNav">
                     <ul class="navbar-nav mt-4 text-center">
                         <li class="nav-item active mx-2 py-2">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item mx-2 py-2">
                             <a class="nav-link cpointer" data-target="#vem-treinar">Vem Treinar Com A Gente</a>
@@ -85,7 +85,7 @@
             <div class="row mt-2 titulo-header-row">
                 <div class="col-12 col-lg-6 py-5 mt-n5 mt-lg-n0 text-center text-lg-left">
                     <div class="titulo-header py-5">
-                        <h2>Evolua no seu<br> ritmo !</h2>
+                        <h2>EVOLUA NO SEU <br> RITMO !</h2>
                     </div>
                 </div>
             </div>
@@ -108,21 +108,23 @@
         </div>
         <div class="row bg-branco py-4 px-5" id="contato1-caixa">
             <div class="col-12">
-                <form id="form-contato1" action="cadastro-concluido.html" class="row" method="post">
+                <!-- <form id="form-contato1" action="cadastro-concluido.html" class="row" method="post"> -->
+                <form id="form-contato1" action="cadastro_lead.php" class="row" method="post">
+                    <input type="hidden" name="formulario" value="index-form1">
                     <div class="form-group col-12 col-md-6 col-lg-4">
                         <label for="nome">Nome Completo</label>
-                        <input type="text" class="form-control" name="nome" id="nome" aria-describedby="helpId" placeholder="Digite seu nome">
+                        <input type="text" class="form-control" name="nome" id="nome" aria-describedby="helpId" placeholder="Digite seu nome" required>
                     </div>
                     <div class="form-group col-12 col-md-6 col-lg-4">
                         <label for="email">E-mail</label>
-                        <input type="text" class="form-control" name="email" id="email" aria-describedby="helpId" placeholder="exemplo@exemplo.com">
+                        <input type="text" class="form-control" name="email" id="email" aria-describedby="helpId" placeholder="exemplo@exemplo.com" required>
                     </div>
                     <div class="form-group col-12 col-md-6 col-lg-4">
                         <label for="telefone">Telefone</label>
-                        <input type="text" class="form-control" name="telefone" id="telefone" aria-describedby="helpId" placeholder="(99) 99999-9999">
+                        <input type="text" class="form-control" name="telefone" id="telefone" aria-describedby="helpId" placeholder="(99) 99999-9999" required>
                     </div>
                     <div class="form-group col-12 col-md-4 col-lg-3 d-flex align-items-end">
-                        <button type="submit" class="btn btn-primary">QUERO SER FIT <i class="fas fa-arrow-right ml-2"></i></button>
+                        <button type="submit" name="submit" class="btn btn-primary">QUERO SER FIT <i class="fas fa-arrow-right ml-2"></i></button>
                     </div>
                 </form>
             </div>
@@ -170,7 +172,7 @@
                     <div class="card py-4 h-100">
                         <img src="img/exercicio3.png" class="card-img-top mx-auto" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Gente que cuida da gente</h5>
+                            <h5 class="card-title">Gente cuidando da gente</h5>
                             <p class="card-text">Profissionais qualificados, acessíveis e com experiência para cuidar da sua saúde e bem-estar.</p>
                         </div>
                         <a href="#">Saiba Mais <i class="fas fa-arrow-right ml-2"></i></a>
@@ -184,7 +186,7 @@
                         <img src="img/exercicio4.png" class="card-img-top mx-auto" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Segurança</h5>
-                            <p class="card-text">Mantemos nossos equipamentos limpos e com vistoria em dia. Sua segurança é muito importante para nós.</p>
+                            <p class="card-text">Mantemos nossa estrutura e aparelhos higienizados e em perfeito estado de funcionamento. Sua segurança é muito importante para nós.</p>
                         </div>
                         <a href="#">Saiba Mais <i class="fas fa-arrow-right ml-2"></i></a>
 
@@ -294,7 +296,8 @@
                     <div class="px-4 px-md-5 text-center text-md-left texto-conheca">
                         <h2>MUITO PRAZER</h2>
                         <p>
-                            Evoluir e evolução. Verbo e substantivo que simbolizam desenvolvimento. Na Apollo Sports trabalhamos para desenvolver o melhor desempenho de cada aluno em um ambiente que proporciona troca de experiências saudáveis.  O nosso objetivo é que você saia daqui se sentindo melhor do que entrou e que o tempo que passe em nosso espaço seja único para você.  Sua saúde e bem-estar são nossa principal motivação. Não deixe o cuidado com você para depois: vem pra nossa onda!
+                            Evoluir e evolução. Verbo e substantivo que simbolizam desenvolvimento. Na Apollo Sports trabalhamos para desenvolver o melhor desempenho de cada cliente em um ambiente que proporciona troca de experiências saudáveis. O nosso objetivo é que você saia
+                            daqui se sentindo melhor do que entrou e que o tempo que passe em nosso espaço seja único para você. Sua saúde e bem-estar são nossa principal motivação. Não deixe o cuidado com você para depois: vem pra nossa onda!
                         </p>
                     </div>
                     <div class="d-none d-lg-block" style="position: absolute; bottom: 0px; right: 5px;">
@@ -373,7 +376,7 @@
                     <div class="px-4 px-lg-5 texto-conheca text-center text-lg-left">
                         <h2>NÓS DESAFIAMOS VOCÊ</h2>
                         <p>
-                            Teste nosso método gratuitamente por 7 dias e viva na pele a experiência de treinar com quem foca em você. 
+                            Teste nosso método gratuitamente por até 7 dias e sinta os primeiros resultados da experiência de treinar com quem foca em você.
                         </p>
                     </div>
                 </div>
@@ -381,21 +384,22 @@
                     <div class="row">
                         <div class="col-12 bg-branco card-contato py-5 px-4 px-lg-5 text-center">
                             <h4>É resultado que você busca? Então está no lugar certo!</h4>
-                            <form class="text-left mt-4" action="cadastro-concluido.html" method="post">
+                            <form class="text-left mt-4" action="cadastro_lead.php" method="post">
+                                <input type="hidden" name="formulario" value="index-form2">
                                 <div class="form-group">
                                     <label for="nome">Nome Completo</label>
-                                    <input type="text" class="form-control" name="nome" id="nome" aria-describedby="helpId" placeholder="Digite seu nome">
+                                    <input type="text" class="form-control" name="nome" id="nome" aria-describedby="helpId" placeholder="Digite seu nome" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">E-mail</label>
-                                    <input type="text" class="form-control" name="email" id="email" aria-describedby="helpId" placeholder="Digite seu e-mail">
+                                    <input type="text" class="form-control" name="email" id="email" aria-describedby="helpId" placeholder="Digite seu e-mail" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="telefone">Telefone</label>
-                                    <input type="text" class="form-control" name="telefone" id="telefone" aria-describedby="helpId" placeholder="(35) 99999-9999">
+                                    <input type="text" class="form-control" name="telefone" id="telefone" aria-describedby="helpId" placeholder="(35) 99999-9999" required>
                                 </div>
                                 <div class="form-group px-4 px-lg-5 mt-4 mt-lg-0 text-center">
-                                    <button type="submit" class="btn btn-primary">DESAFIO ACEITO <i class="fas fa-arrow-right ml-2"></i></button>
+                                    <button type="submit" name="submit" class="btn btn-primary">DESAFIO ACEITO <i class="fas fa-arrow-right ml-2"></i></button>
                                 </div>
                             </form>
                         </div>
@@ -503,7 +507,7 @@
                 <div class="col-12 px-4 px-lg-5 py-5 mt-3">
                     <div class="px-4 px-lg-5 text-center text-lg-left titulo-depoimento">
                         <h4>Depoimentos</h4>
-                        <span>Veja o que falam do Apollo Sports</span>
+                        <span>Veja o que falam da Apollo Sports</span>
                     </div>
                 </div>
             </div>
@@ -691,8 +695,7 @@
                             </div>
                             <div class="row mt-4">
                                 <div class="col-12 footer-logo-texto pl-5 pr-4 text-center text-lg-left">
-                                    A Apollo Sports oferece a estrutura ideal e uma equipe dedicada a ajudar você no que for preciso para transformar sua meta em resultados. Conheça nosso espaço e descubra a academia que você sempre quis! 
-                                </div>
+                                    Oferecemos a estrutura ideal e uma equipe dedicada a ajudar você no que for preciso para transformar sua meta em resultados. Conheça nosso espaço e descubra a academia que você sempre quis! </div>
                             </div>
                         </div>
                         <div class="col-12 col-lg-4">
@@ -984,8 +987,8 @@
                 } else {
                     pos = 0;
                 }
-                $('.img-header[img="'+pos+'"').show(500);
-                $('.img-header[img="'+pos+'"').addClass('active');
+                $('.img-header[img="' + pos + '"').show(500);
+                $('.img-header[img="' + pos + '"').addClass('active');
             });
 
             $("#img-header-ant").click(function() {
@@ -997,8 +1000,8 @@
                 } else {
                     pos = $('.img-header').length - 1;
                 }
-                $('.img-header[img="'+pos+'"').show(500);
-                $('.img-header[img="'+pos+'"').addClass('active');
+                $('.img-header[img="' + pos + '"').show(500);
+                $('.img-header[img="' + pos + '"').addClass('active');
             });
 
             $("#img-header-prox").click(function() {
@@ -1010,8 +1013,8 @@
                 } else {
                     pos = 0;
                 }
-                $('.img-header[img="'+pos+'"').show(500);
-                $('.img-header[img="'+pos+'"').addClass('active');
+                $('.img-header[img="' + pos + '"').show(500);
+                $('.img-header[img="' + pos + '"').addClass('active');
             });
 
             $("#img-conheca-ant").click(function() {

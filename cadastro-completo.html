@@ -36,7 +36,7 @@
             <div class="d-flex col-12 px-5 justify-content-center"> -->
         <div class="container">
             <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="/">
                     <img class="mt-3" src="img/logo.png" alt="Logo Apollo Sports">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,16 +47,16 @@
                 <div class="collapse navbar-collapse text-center" id="navbarNav">
                     <ul class="navbar-nav mt-4 text-center">
                         <li class="nav-item active mx-2 py-2">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item mx-2 py-2">
-                            <a class="nav-link" href="index.html">Vem Treinar Com A Gente</a>
+                            <a class="nav-link" href="/">Vem Treinar Com A Gente</a>
                         </li>
                         <li class="nav-item mx-2 py-2">
-                            <a class="nav-link" href="index.html">Muito Prazer</a>
+                            <a class="nav-link" href="/">Muito Prazer</a>
                         </li>
                         <li class="nav-item mx-2 py-2">
-                            <a class="nav-link" href="index.html">Programas</a>
+                            <a class="nav-link" href="/">Programas</a>
                         </li>
                     </ul>
                     <div class="text-center d-block d-lg-none">
@@ -107,34 +107,35 @@
         </div>
         <div class="row bg-branco py-4 px-5" id="contato1-caixa">
             <div class="col-12">
-                <form id="form-contato1" action="pre-matricula-concluida.html" class="row" method="post">
+                <form id="form-contato1" action="cadastro_completo.php" class="row" method="post">
+                    <input type="hidden" name="formulario" value="cadastro-form1">
                     <div class="form-group col-12 col-md-4">
                         <label for="nome">Nome Completo</label>
-                        <input type="text" class="form-control" name="nome" id="nome" aria-describedby="helpId" placeholder="Digite seu nome">
+                        <input type="text" class="form-control" name="nome" id="nome" aria-describedby="helpId" placeholder="Digite seu nome" required>
                     </div>
                     <div class="form-group col-12 col-md-4">
                         <label for="email">E-mail</label>
-                        <input type="text" class="form-control" name="email" id="email" aria-describedby="helpId" placeholder="exemplo@exemplo.com">
+                        <input type="text" class="form-control" name="email" id="email" aria-describedby="helpId" placeholder="exemplo@exemplo.com" required>
                     </div>
                     <div class="form-group col-12 col-md-4">
                         <label for="telefone">Telefone</label>
-                        <input type="text" class="form-control" name="telefone" id="telefone" aria-describedby="helpId" placeholder="(99) 9999-9999">
+                        <input type="text" class="form-control" name="telefone" id="telefone" aria-describedby="helpId" placeholder="(99) 9999-9999" required>
                     </div>
                     <div class="form-group col-12 col-md-4">
                         <label for="celular">Celular</label>
-                        <input type="text" class="form-control" name="celular" id="celular" aria-describedby="helpId" placeholder="(99) 99999-9999">
+                        <input type="text" class="form-control" name="celular" id="celular" aria-describedby="helpId" placeholder="(99) 99999-9999" required>
                     </div>
                     <div class="form-group col-12 col-md-4">
                         <label for="cpf">CPF</label>
-                        <input type="text" class="form-control" name="cpf" id="cpf" aria-describedby="helpId" placeholder="123.456.789-00">
+                        <input type="text" class="form-control" name="cpf" id="cpf" aria-describedby="helpId" placeholder="123.456.789-00" required>
                     </div>
                     <div class="form-group col-12 col-md-4">
                         <label for="nascimento">Data de Nascimento</label>
-                        <input type="date" class="form-control" name="nascimento" id="nascimento" aria-describedby="helpId" placeholder="">
+                        <input type="date" class="form-control" name="nascimento" id="nascimento" aria-describedby="helpId" placeholder="" required>
                     </div>
                     <div class="form-group col-12 col-md-4">
                         <label for="rg">RG</label>
-                        <input type="text" class="form-control" name="rg" id="rg" aria-describedby="helpId" placeholder="12.345.678-90">
+                        <input type="text" class="form-control" name="rg" id="rg" aria-describedby="helpId" placeholder="12.345.678-90" required>
                     </div>
                     <div class="form-check col-12 col-md-4 form-check-inline pl-3">
                         Sexo
@@ -153,15 +154,15 @@
 
                     <div class="form-group col-12 col-md-4">
                         <label for="endereco">Endereço</label>
-                        <input type="text" class="form-control" name="endereco" id="endereco" aria-describedby="helpId" placeholder="Rua exemplo">
+                        <input type="text" class="form-control" name="endereco" id="endereco" aria-describedby="helpId" placeholder="Rua exemplo" required>
                     </div>
                     <div class="form-group col-8 col-md-3">
                         <label for="cep">CEP</label>
-                        <input type="text" class="form-control" name="cep" id="cep" aria-describedby="helpId" placeholder="12345-000">
+                        <input type="text" class="form-control" name="cep" id="cep" aria-describedby="helpId" placeholder="12345-000" required>
                     </div>
                     <div class="form-group col-4 col-md-1">
                         <label for="numero">Número</label>
-                        <input type="text" class="form-control" name="numero" id="numero" aria-describedby="helpId" placeholder="123">
+                        <input type="text" class="form-control" name="numero" id="numero" aria-describedby="helpId" placeholder="123" required>
                     </div>
                     <div class="form-group col-12 col-md-4">
                         <label for="complemento">Complemento</label>
@@ -170,18 +171,18 @@
 
                     <div class="form-group col-12 col-md-2">
                         <label for="cidade">Cidade</label>
-                        <input type="text" class="form-control" name="cidade" id="cidade" aria-describedby="helpId" placeholder="Alfenas">
+                        <input type="text" class="form-control" name="cidade" id="cidade" aria-describedby="helpId" placeholder="Alfenas" required>
                     </div>
                     <div class="form-group col-12 col-md-2">
                         <label for="estado">Estado</label>
-                        <input type="text" class="form-control" name="estado" id="estado" aria-describedby="helpId" placeholder="MG">
+                        <input type="text" class="form-control" name="estado" id="estado" aria-describedby="helpId" placeholder="MG" required>
                     </div>
                     <div class="form-group col-12 col-md-4">
                         <label for="bairro">Bairro</label>
-                        <input type="text" class="form-control" name="bairro" id="bairro" aria-describedby="helpId" placeholder="Centro">
+                        <input type="text" class="form-control" name="bairro" id="bairro" aria-describedby="helpId" placeholder="Centro" required>
                     </div>
                     <div class="col-12 my-3 text-center">
-                        <button type="submit" class="btn btn-primary botao-contato py-3 px-3">QUERO FAZER PARTE <i class="fas fa-arrow-right ml-2"></i></button>
+                        <button type="submit" name="submit" class="btn btn-primary botao-contato py-3 px-3">QUERO FAZER PARTE <i class="fas fa-arrow-right ml-2"></i></button>
                     </div>
 
                 </form>
@@ -208,7 +209,7 @@
             <div class="col-12 px-4 px-lg-5 py-5 mt-3">
                 <div class="px-4 px-lg-5 text-center text-lg-left titulo-depoimento">
                     <h4>Depoimentos</h4>
-                    <span>Veja o que falam do Apollo Sports</span>
+                    <span>Veja o que falam da Apollo Sports</span>
                 </div>
             </div>
         </div>
@@ -393,8 +394,7 @@
                             </div>
                             <div class="row mt-4">
                                 <div class="col-12 footer-logo-texto pl-5 pr-4 text-center text-lg-left">
-                                    A Apollo Sports oferece a estrutura ideal e uma equipe dedicada a ajudar você no que for preciso para transformar sua meta em resultados. Conheça nosso espaço e descubra a academia que você sempre quis! 
-                                </div>
+                                    Oferecemos a estrutura ideal e uma equipe dedicada a ajudar você no que for preciso para transformar sua meta em resultados. Conheça nosso espaço e descubra a academia que você sempre quis! </div>
                             </div>
                         </div>
                         <div class="col-12 col-lg-4">
@@ -406,10 +406,10 @@
                             <div class="row mt-4 text-center text-lg-left">
                                 <div class="col-12 footer-links-texto pl-0 pl-lg-5 pr-0 pr-lg-4">
                                     <ul class="px-1" style="list-style: none;">
-                                        <li class="my-2 nav-item-footer"><a class="nav-link-footer cpointer" href="index.html">Inicio</a></li>
-                                        <li class="my-2 nav-item-footer"><a class="nav-link-footer cpointer" href="index.html">Vem treinar com a gente</a></li>
-                                        <li class="my-2 nav-item-footer"><a class="nav-link-footer cpointer" href="index.html">Muito prazer</a></li>
-                                        <li class="my-2 nav-item-footer"><a class="nav-link-footer cpointer" href="index.html">Programas</a></li>
+                                        <li class="my-2 nav-item-footer"><a class="nav-link-footer cpointer" href="/">Inicio</a></li>
+                                        <li class="my-2 nav-item-footer"><a class="nav-link-footer cpointer" href="/">Vem treinar com a gente</a></li>
+                                        <li class="my-2 nav-item-footer"><a class="nav-link-footer cpointer" href="/">Muito prazer</a></li>
+                                        <li class="my-2 nav-item-footer"><a class="nav-link-footer cpointer" href="/">Programas</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -583,8 +583,8 @@
                 } else {
                     pos = 0;
                 }
-                $('.img-header[img="'+pos+'"').show(500);
-                $('.img-header[img="'+pos+'"').addClass('active');
+                $('.img-header[img="' + pos + '"').show(500);
+                $('.img-header[img="' + pos + '"').addClass('active');
             });
 
             $("#img-header-ant").click(function() {
@@ -596,8 +596,8 @@
                 } else {
                     pos = $('.img-header').length - 1;
                 }
-                $('.img-header[img="'+pos+'"').show(500);
-                $('.img-header[img="'+pos+'"').addClass('active');
+                $('.img-header[img="' + pos + '"').show(500);
+                $('.img-header[img="' + pos + '"').addClass('active');
             });
 
             $("#img-header-prox").click(function() {
@@ -609,8 +609,8 @@
                 } else {
                     pos = 0;
                 }
-                $('.img-header[img="'+pos+'"').show(500);
-                $('.img-header[img="'+pos+'"').addClass('active');
+                $('.img-header[img="' + pos + '"').show(500);
+                $('.img-header[img="' + pos + '"').addClass('active');
             });
 
             // Eventos do slide de depoimentos
