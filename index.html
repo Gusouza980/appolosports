@@ -6,7 +6,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta name="description" content="Site de captura de leads da Apollo Sports">
+    <meta name="keywords" content="Academia, Apollo, Sports, Leads">
+    <meta name="author" content="Luis Gustavo de Souza Carvalho">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
@@ -19,8 +21,8 @@
 
 <body class="bg-cinza">
     <div class="container-fuild pb-5 carousel slide" data-ride="carousel" id="container-header">
-        <img class="img-header active" img="0" src="img/fundo1.png">
-        <img class="img-header" img="1" style="display: none;" src="img/fundo3.png">
+        <img class="img-header active" alt="Header 1" img="0" src="img/fundo1.png" >
+        <img class="img-header"  alt="Header 2" img="1" style="display: none;" src="img/fundo3.png">
         <div class="container d-none d-lg-block">
             <div class="row">
                 <div class="col-12">
@@ -100,8 +102,8 @@
                         <h4 id="titulo-contato1">Deixe seu contato e venha surfar na nossa onda</h4>
                     </div>
                     <div class="col-md-6 text-right d-none d-lg-block">
-                        <button class="btn btn-arrow bg-primaria mx-n1" id="img-header-ant" style="width: 50px; height: 50px;" type="button"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
-                        <button class="btn btn-arrow bg-branco" id="img-header-prox" style="width: 50px; height: 50px;" type="button"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                        <button class="btn btn-arrow bg-primaria mx-n1" id="img-header-ant" aria-label="Voltar Imagem" style="width: 50px; height: 50px;" type="button"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                        <button class="btn btn-arrow bg-branco" id="img-header-prox" aria-label="Avançar Imagem" style="width: 50px; height: 50px;" type="button"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
                     </div>
                 </div>
             </div>
@@ -113,15 +115,15 @@
                     <input type="hidden" name="formulario" value="index-form1">
                     <div class="form-group col-12 col-md-6 col-lg-4">
                         <label for="nome">Nome Completo</label>
-                        <input type="text" class="form-control" name="nome" id="nome" aria-describedby="helpId" placeholder="Digite seu nome" required>
+                        <input type="text" class="form-control" name="nome" id="nome" placeholder="Digite seu nome" required>
                     </div>
                     <div class="form-group col-12 col-md-6 col-lg-4">
                         <label for="email">E-mail</label>
-                        <input type="text" class="form-control" name="email" id="email" aria-describedby="helpId" placeholder="exemplo@exemplo.com" required>
+                        <input type="text" class="form-control" name="email" id="email" placeholder="exemplo@exemplo.com" required>
                     </div>
                     <div class="form-group col-12 col-md-6 col-lg-4">
                         <label for="telefone">Telefone</label>
-                        <input type="text" class="form-control" name="telefone" id="telefone" aria-describedby="helpId" placeholder="(99) 99999-9999" required>
+                        <input type="text" class="form-control" name="telefone" id="telefone" placeholder="(99) 99999-9999" required>
                     </div>
                     <div class="form-group col-12 col-md-4 col-lg-3 d-flex align-items-end">
                         <button type="submit" name="submit" class="btn btn-primary">QUERO SER FIT <i class="fas fa-arrow-right ml-2"></i></button>
@@ -148,7 +150,7 @@
             <div class="row mt-5 row-eq-height px-4 px-md-5 d-flex d-md-none d-lg-flex">
                 <div class="col-12 col-md-4 text-center div-card-treino">
                     <div class="card py-4 h-100">
-                        <img src="img/exercicio1.png" class="card-img-top mx-auto img-exercicio" alt="...">
+                        <img src="img/exercicio1.png" class="card-img-top mx-auto img-exercicio" alt="Exercício 1">
                         <div class="card-body">
                             <h5 class="card-title">Sua decisão, nossa caminhada</h5>
                             <p class="card-text">Incentivamos você todos os dias a alcançar seus resultados.</p>
@@ -159,7 +161,7 @@
                 </div>
                 <div class="col-12 col-md-4 mt-3 mt-md-0 text-center div-card-treino">
                     <div class="card py-4 h-100">
-                        <img src="img/exercicio2.png" class="card-img-top mx-auto" alt="...">
+                        <img src="img/exercicio2.png" class="card-img-top mx-auto" alt="Exercício 2">
                         <div class="card-body">
                             <h5 class="card-title">Acompanhamos de perto </h5>
                             <p class="card-text">Orientações corretas trazem um resultado incrível. Aqui, sua meta é acompanhada diariamente para garantir seu sucesso.</p>
@@ -170,7 +172,7 @@
                 </div>
                 <div class="col-12 col-md-4 mt-3 mt-md-0 text-center div-card-treino">
                     <div class="card py-4 h-100">
-                        <img src="img/exercicio3.png" class="card-img-top mx-auto" alt="...">
+                        <img src="img/exercicio3.png" class="card-img-top mx-auto" alt="Exercício 3">
                         <div class="card-body">
                             <h5 class="card-title">Gente cuidando da gente</h5>
                             <p class="card-text">Profissionais qualificados, acessíveis e com experiência para cuidar da sua saúde e bem-estar.</p>
@@ -183,7 +185,7 @@
             <div class="row mt-3 row-eq-height px-4 px-md-5 d-flex d-md-none d-lg-flex">
                 <div class="col-12 col-md-4 text-center div-card-treino">
                     <div class="card py-4 h-100">
-                        <img src="img/exercicio4.png" class="card-img-top mx-auto" alt="...">
+                        <img src="img/exercicio4.png" style="max-width: 101px; max-height: 125px;" class="card-img-top mx-auto" alt="Exercício 4">
                         <div class="card-body">
                             <h5 class="card-title">Segurança</h5>
                             <p class="card-text">Mantemos nossa estrutura e aparelhos higienizados e em perfeito estado de funcionamento. Sua segurança é muito importante para nós.</p>
@@ -194,7 +196,7 @@
                 </div>
                 <div class="col-12 col-md-4 mt-3 mt-md-0 text-center div-card-treino">
                     <div class="card py-4 h-100">
-                        <img src="img/exercicio5.png" class="card-img-top mx-auto" alt="...">
+                        <img src="img/exercicio5.png" class="card-img-top mx-auto" alt="Exercício 5">
                         <div class="card-body">
                             <h5 class="card-title">Planos diferenciados</h5>
                             <p class="card-text">Nossos planos foram pensados para que caibam na sua rotina e no seu bolso.</p>
@@ -205,7 +207,7 @@
                 </div>
                 <div class="col-12 col-md-4 mt-3 mt-md-0 text-center div-card-treino">
                     <div class="card py-4 h-100">
-                        <img src="img/exercicio6.png" class="card-img-top mx-auto" alt="...">
+                        <img src="img/exercicio6.png" class="card-img-top mx-auto" alt="Exercício 6">
                         <div class="card-body">
                             <h5 class="card-title">Atualização constante</h5>
                             <p class="card-text">Estamos sempre em busca de trazer mais qualidade para os nossos alunos.</p>
@@ -220,7 +222,7 @@
             <div class="row mt-5 row-eq-height px-4 px-md-5 d-none d-md-flex d-lg-none">
                 <div class="col-12 col-md-6 col-lg-4 text-center div-card-treino">
                     <div class="card py-4 h-100">
-                        <img src="img/exercicio1.png" class="card-img-top mx-auto img-exercicio" alt="...">
+                        <img src="img/exercicio1.png" class="card-img-top mx-auto img-exercicio" alt="Exercício 1">
                         <div class="card-body">
                             <h5 class="card-title">Sua decisão, nossa caminhada</h5>
                             <p class="card-text">Incentivamos você todos os dias a alcançar seus resultados.</p>
@@ -231,7 +233,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 mt-3 text-center div-card-treino">
                     <div class="card py-4 h-100">
-                        <img src="img/exercicio2.png" class="card-img-top mx-auto" alt="...">
+                        <img src="img/exercicio2.png" class="card-img-top mx-auto" alt="Exercício 2">
                         <div class="card-body">
                             <h5 class="card-title">Acompanhamento de perto </h5>
                             <p class="card-text">Orientações corretas trazem um resultado incrível. Aqui, sua meta é acompanhada diariamente para garantir seu sucesso.</p>
@@ -242,7 +244,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 mt-3 text-center div-card-treino">
                     <div class="card py-4 h-100">
-                        <img src="img/exercicio3.png" class="card-img-top mx-auto" alt="...">
+                        <img src="img/exercicio3.png" class="card-img-top mx-auto" alt="Exercício 3">
                         <div class="card-body">
                             <h5 class="card-title">Gente que cuida da gente</h5>
                             <p class="card-text">Profissionais qualificados, acessíveis e com experiência para cuidar da sua saúde e bem-estar.</p>
@@ -253,7 +255,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 mt-3 text-center div-card-treino">
                     <div class="card py-4 h-100">
-                        <img src="img/exercicio4.png" class="card-img-top mx-auto" alt="...">
+                        <img src="img/exercicio4.png" class="card-img-top mx-auto" alt="Exercício 4"">
                         <div class="card-body">
                             <h5 class="card-title">Segurança</h5>
                             <p class="card-text">Mantemos nossos equipamentos limpos e com vistoria em dia. Sua segurança é muito importante para nós.</p>
@@ -264,7 +266,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 mt-3 text-center div-card-treino">
                     <div class="card py-4 h-100">
-                        <img src="img/exercicio5.png" class="card-img-top mx-auto" alt="...">
+                        <img src="img/exercicio5.png" class="card-img-top mx-auto" alt="Exercício 5">
                         <div class="card-body">
                             <h5 class="card-title">Planos diferenciados</h5>
                             <p class="card-text">Nossos planos foram pensados para que caibam na sua rotina e no seu bolso.</p>
@@ -275,7 +277,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 mt-3 text-center div-card-treino">
                     <div class="card py-4 h-100">
-                        <img src="img/exercicio6.png" class="card-img-top mx-auto" alt="...">
+                        <img src="img/exercicio6.png" class="card-img-top mx-auto" alt="Exercício 6"">
                         <div class="card-body">
                             <h5 class="card-title">Atualização constante</h5>
                             <p class="card-text">Estamos sempre em busca de trazer mais qualidade para os nossos alunos.</p>
@@ -301,7 +303,7 @@
                         </p>
                     </div>
                     <div class="d-none d-lg-block" style="position: absolute; bottom: 0px; right: 5px;">
-                        <button class="btn btn-arrow bg-primaria mx-n1" id="img-conheca-ant" style="width: 50px; height: 50px;" type="button"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                        <button class="btn btn-arrow bg-primaria mx-n1" id="img-conheca-ant" aria-label="Voltar Imagem" style="width: 50px; height: 50px;" type="button"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="col-12 col-lg-5 pl-0" style="position: relative;">
@@ -320,7 +322,7 @@
                     </div>
 
                     <div class="d-none d-lg-block" style="position: absolute; bottom: 0px; left: 0px;">
-                        <button class="btn btn-arrow bg-branco" id="img-conheca-prox" style="width: 50px; height: 50px;" type="button"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                        <button class="btn btn-arrow bg-branco" id="img-conheca-prox" aria-label="Avançar Imagem" style="width: 50px; height: 50px;" type="button"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
                     </div>
                 </div>
             </div>
@@ -351,15 +353,15 @@
                         <div class="col-12">
                             <div class="row">
                                 <div class="col-6 pr-1">
-                                    <img style="width: 100%;" src="img/foto-1.png" alt="">
+                                    <img style="width: 100%;" src="img/foto-1.png" alt="Foto 1">
                                 </div>
                                 <div class="col-6 pl-1">
-                                    <img style="width: 100%;" src="img/foto-1.png" alt="">
+                                    <img style="width: 100%;" src="img/foto-1.png" alt="Foto 2">
                                 </div>
                             </div>
                             <div class="row mt-3">
                                 <div class="col-12">
-                                    <img style="width: 100%;" src="img/foto-3.png" alt="">
+                                    <img style="width: 100%;" src="img/foto-3.png" alt="Foto 3">
                                 </div>
                             </div>
                         </div>
@@ -388,15 +390,15 @@
                                 <input type="hidden" name="formulario" value="index-form2">
                                 <div class="form-group">
                                     <label for="nome">Nome Completo</label>
-                                    <input type="text" class="form-control" name="nome" id="nome" aria-describedby="helpId" placeholder="Digite seu nome" required>
+                                    <input type="text" class="form-control" name="nome" placeholder="Digite seu nome" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">E-mail</label>
-                                    <input type="text" class="form-control" name="email" id="email" aria-describedby="helpId" placeholder="Digite seu e-mail" required>
+                                    <input type="text" class="form-control" name="email" placeholder="Digite seu e-mail" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="telefone">Telefone</label>
-                                    <input type="text" class="form-control" name="telefone" id="telefone" aria-describedby="helpId" placeholder="(35) 99999-9999" required>
+                                    <input type="text" class="form-control" name="telefone" placeholder="(35) 99999-9999" required>
                                 </div>
                                 <div class="form-group px-4 px-lg-5 mt-4 mt-lg-0 text-center">
                                     <button type="submit" name="submit" class="btn btn-primary">DESAFIO ACEITO <i class="fas fa-arrow-right ml-2"></i></button>
@@ -425,53 +427,53 @@
                     </div>
                     <div class="px-4 px-lg-5" style="position: relative;">
                         <div class="d-none d-lg-block" style="position: absolute; top: 50%; left: 0px;">
-                            <button class="btn btn-arrow bg-branco leftLst" id="slide-programas-ant" style="width: 50px; height: 50px;" type="button"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                            <button class="btn btn-arrow bg-branco leftLst" id="slide-programas-ant" aria-label="Voltar Imagem" style="width: 50px; height: 50px;" type="button"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
                         </div>
                         <div class="d-none d-lg-block" style="position: absolute; top: 50%; right: 0px;">
-                            <button class="btn btn-arrow bg-branco rightLst" id="slide-programas-prox" style="width: 50px; height: 50px;" type="button"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                            <button class="btn btn-arrow bg-branco rightLst" id="slide-programas-prox" aria-label="Avançar Imagem" style="width: 50px; height: 50px;" type="button"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
                         </div>
                         <div class="row px-4 px-lg-5 slide-programas" id="slide-programas">
                             <div class="col-12">
                                 <div class="row slide-programas-item active" num="1">
                                     <div class="col-12 col-md-6 col-lg-3 mt-3 mt-lg-0 imagem-programa active" num="2">
-                                        <img src="img/programa1.png" style="width: 100%;" alt="">
+                                        <img src="img/programa1.png" style="width: 100%;" alt="Desafio 60 Dias">
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-3 mt-3 mt-lg-0 imagem-programa active" num="3">
-                                        <img src="img/programa1.png" style="width: 100%;" alt="">
+                                        <img src="img/programa1.png" style="width: 100%;" alt="Desafio 60 Dias">
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-3 mt-3 mt-lg-0 imagem-programa active" num="4">
-                                        <img src="img/programa1.png" style="width: 100%;" alt="">
+                                        <img src="img/programa1.png" style="width: 100%;" alt="Desafio 60 Dias">
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-3 mt-3 mt-lg-0 imagem-programa " num="5">
-                                        <img src="img/programa1.png" style="width: 100%;" alt="">
+                                        <img src="img/programa1.png" style="width: 100%;" alt="Desafio 60 Dias">
                                     </div>
                                 </div>
                                 <div class="row slide-programas-item" num="2" style="display:none">
                                     <div class="col-12 col-md-6 col-lg-3 mt-3 mt-lg-0 imagem-programa active" num="2">
-                                        <img src="img/programa1.png" style="width: 100%;" alt="">
+                                        <img src="img/programa1.png" style="width: 100%;" alt="Desafio 60 Dias">
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-3 mt-3 mt-lg-0 imagem-programa active" num="3">
-                                        <img src="img/programa1.png" style="width: 100%;" alt="">
+                                        <img src="img/programa1.png" style="width: 100%;" alt="Desafio 60 Dias">
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-3 mt-3 mt-lg-0 imagem-programa active" num="4">
-                                        <img src="img/programa1.png" style="width: 100%;" alt="">
+                                        <img src="img/programa1.png" style="width: 100%;" alt="Desafio 60 Dias">
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-3 mt-3 mt-lg-0 imagem-programa " num="5">
-                                        <img src="img/programa1.png" style="width: 100%;" alt="">
+                                        <img src="img/programa1.png" style="width: 100%;" alt="Desafio 60 Dias">
                                     </div>
                                 </div>
                                 <div class="row slide-programas-item" num="3" style="display:none">
                                     <div class="col-12 col-md-6 col-lg-3 mt-3 mt-lg-0 imagem-programa active" num="2">
-                                        <img src="img/programa1.png" style="width: 100%;" alt="">
+                                        <img src="img/programa1.png" style="width: 100%;" alt="Desafio 60 Dias">
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-3 mt-3 mt-lg-0 imagem-programa active" num="3">
-                                        <img src="img/programa1.png" style="width: 100%;" alt="">
+                                        <img src="img/programa1.png" style="width: 100%;" alt="Desafio 60 Dias">
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-3 mt-3 mt-lg-0 imagem-programa active" num="4">
-                                        <img src="img/programa1.png" style="width: 100%;" alt="">
+                                        <img src="img/programa1.png" style="width: 100%;" alt="Desafio 60 Dias">
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-3 mt-3 mt-lg-0 imagem-programa " num="5">
-                                        <img src="img/programa1.png" style="width: 100%;" alt="">
+                                        <img src="img/programa1.png" style="width: 100%;" alt="Desafio 60 Dias">
                                     </div>
                                 </div>
                             </div>
@@ -490,12 +492,12 @@
                     <div class="px-4 px-lg-5 texto-video text-center text-lg-left">
                         <h2>VEM CONHECER QUEM JÁ É FIT</h2>
                         <p>
-                            Aqui formamos uma família! Assista aos depoimentos dos alunos que já se tornarem fit com a gente.
+                            Aqui formamos uma família! Veja os depoimentos dos alunos que já se tornarem fit com a gente.
                         </p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-5 pt-5">
-                    <img class="video-preview" src="img/preview-video.png" alt="">
+                    <img class="video-preview" src="img/preview-video.png" alt=" Preview Video">
                 </div>
             </div>
         </div>
@@ -513,8 +515,8 @@
             </div>
             <div class="row px-4 px-lg-5 pt-2 pb-5 mt-n4" style="position: relative;">
                 <div class="d-none d-lg-block mx-5" style="position: absolute; bottom: 0px; right: 0px;">
-                    <button name="" class="btn btn-arrow bg-primaria" id="slide-depoimentos-ant" style="width: 50px; height: 50px;" type="button"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
-                    <button name="" class="btn btn-arrow bg-branco" id="slide-depoimentos-prox" style="width: 50px; height: 50px;" type="button"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                    <button name="" class="btn btn-arrow bg-primaria" id="slide-depoimentos-ant" aria-label="Voltar Imagem" style="width: 50px; height: 50px;" type="button"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                    <button name="" class="btn btn-arrow bg-branco" id="slide-depoimentos-prox" aria-label="Avançar Imagem" style="width: 50px; height: 50px;" type="button"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
                 </div>
                 <div class="col-12">
                     <div class="row slide-depoimentos" id="slide-depoimentos">
@@ -525,7 +527,7 @@
                                         <div class="container">
                                             <div class="row py-3 px-3">
                                                 <div class="col-12 col-lg-3 text-center">
-                                                    <img src="img/foto-perfil.png" alt="">
+                                                    <img src="img/foto-perfil.png" alt=" Perfil Depoimento">
                                                 </div>
                                                 <div class="col-12 col-lg-9 text-center text-lg-left texto-card-depoimento">
                                                     <h4>Natalia </h4>
@@ -541,7 +543,7 @@
                                         <div class="container">
                                             <div class="row py-3 px-3">
                                                 <div class="col-12 col-lg-3 text-center">
-                                                    <img src="img/foto-perfil.png" alt="">
+                                                    <img src="img/foto-perfil.png" alt="Perfil Depoimento">
                                                 </div>
                                                 <div class="col-12 col-lg-9 text-center text-lg-left texto-card-depoimento">
                                                     <h4>Natalia </h4>
@@ -559,7 +561,7 @@
                                         <div class="container">
                                             <div class="row py-3 px-3">
                                                 <div class="col-12 col-lg-3 text-center">
-                                                    <img src="img/foto-perfil.png" alt="">
+                                                    <img src="img/foto-perfil.png" alt="Perfil Depoimento">
                                                 </div>
                                                 <div class="col-12 col-lg-9 text-center text-lg-left texto-card-depoimento">
                                                     <h4>Natalia </h4>
@@ -575,7 +577,7 @@
                                         <div class="container">
                                             <div class="row py-3 px-3">
                                                 <div class="col-12 col-lg-3 text-center">
-                                                    <img src="img/foto-perfil.png" alt="">
+                                                    <img src="img/foto-perfil.png" alt="Perfil Depoimento">
                                                 </div>
                                                 <div class="col-12 col-lg-9 text-center text-lg-left texto-card-depoimento">
                                                     <h4>Natalia </h4>
@@ -614,7 +616,7 @@
                     </div>
                     <div class="row mt-2 px-4 justify-content-center">
                         <div class="col-8 col-lg-12 bg-primaria py-4 text-center img-card-covid">
-                            <img src="img/desinfeccao.png" alt="">
+                            <img src="img/desinfeccao.png" alt="Desinfecção">
                         </div>
                     </div>
                     <div class="row mt-2">
@@ -632,7 +634,7 @@
                     </div>
                     <div class="row mt-2 px-4 justify-content-center">
                         <div class="col-8 col-lg-12 bg-primaria py-4 text-center img-card-covid">
-                            <img src="img/distanciamento.png" alt="">
+                            <img src="img/distanciamento.png" alt="Distânciamento">
                         </div>
                     </div>
                     <div class="row mt-2">
@@ -650,7 +652,7 @@
                     </div>
                     <div class="row mt-2 px-4 justify-content-center">
                         <div class="col-8 col-lg-12 bg-primaria py-4 text-center img-card-covid">
-                            <img src="img/agendamento.png" alt="">
+                            <img src="img/agendamento.png" alt="Agendamento">
                         </div>
                     </div>
                     <div class="row mt-2">
@@ -668,7 +670,7 @@
                     </div>
                     <div class="row mt-2 px-4 justify-content-center">
                         <div class="col-8 col-lg-12 bg-primaria py-4 text-center img-card-covid">
-                            <img src="img/temperatura.png" alt="">
+                            <img src="img/temperatura.png" alt="Temperatura">
                         </div>
                     </div>
                     <div class="row mt-2">
@@ -690,7 +692,7 @@
                         <div class="col-12 col-lg-4">
                             <div class="row">
                                 <div class="col-12 px-4 px-lg-5 text-center text-lg-left">
-                                    <img src="img/logo.png" style="max-width:100%" alt="">
+                                    <img src="img/logo.png" style="max-width:100%" alt="Logo">
                                 </div>
                             </div>
                             <div class="row mt-4">
@@ -765,7 +767,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center px-4 px-lg-5 text-center text-lg-left">
-                            <img src="img/mapa.png" style="max-width: 100%;" alt="">
+                            <img src="img/mapa.png" style="max-width: 100%;" alt="Mapa">
                         </div>
                     </div>
                     <div class="row px-4 px-lg-5 text-white">
@@ -778,7 +780,7 @@
                             <span style="line-height: 30px;">© 2021 Apollo Sports - Todos os direitos reservados</span>
                         </div>
                         <div class="col-12 col-lg-6 text-center text-lg-right copyright2 px-4 px-lg-5 my-3 text-center text-lg-right my-lg-0">
-                            <span style="line-height: 30px;">Desenvolvido por <img src="img/7seven.png" alt=""> com metodologia <img src="img/gefit.png" alt=""></span>
+                            <span style="line-height: 30px;">Desenvolvido por <img src="img/7seven.png" alt="Logo 7Seven"> com metodologia <img src="img/gefit.png" alt="Logo Gefit"></span>
                         </div>
                     </div>
                 </div>
